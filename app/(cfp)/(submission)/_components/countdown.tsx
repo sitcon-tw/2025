@@ -141,3 +141,11 @@ export default function CountdownPage() {
     </div>
   );
 }
+
+// 上方 642 * 200px
+
+// 左右gap: pc 24px tablet 20px
+// 上下gap: pc 22px tablet 22px
+
+// 左下 377.09*67 552*67
+// 右下 245.82*67 264*67
