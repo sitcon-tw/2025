@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -29,7 +30,7 @@ function NavbarItem({
 }: Readonly<{ children: React.ReactNode; link: string }>) {
   return (
     <li className="hover:text-white">
-      <a href={link}>{children}</a>
+      <Link href={link}>{children}</Link>
     </li>
   );
 }
