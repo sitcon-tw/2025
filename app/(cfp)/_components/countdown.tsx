@@ -52,7 +52,7 @@ export default function CountdownPage() {
   }
 
   return (
-    <div className="flex h-[289px] w-[642px] flex-col justify-between lg:w-[840px]">
+    <div className="mx-auto flex h-[289px] w-[642px] flex-col justify-between lg:w-[840px]">
       <div className="border-light-brown flex h-[200px] w-full flex-col items-center rounded-3xl border px-24 py-5">
         <h3 className="text-light-brown text-normal tracking-widest">
           距 離 投 稿 截 止 還 有 :
