@@ -3,7 +3,9 @@ import Countdown from "./_components/countdown";
 export default function Home() {
   return (
     <>
-      <Countdown />
+      <div className="bg-blue">
+        <Countdown />
+      </div>
     </>
   );
 }
