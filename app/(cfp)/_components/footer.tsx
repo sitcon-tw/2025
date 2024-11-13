@@ -9,7 +9,7 @@ import YoutubeLogo from "./logos/youtube";
 
 export default function Footer() {
   return (
-    <footer className="text-blue space-y-7">
+    <footer className="text-blue space-y-7 py-16">
       <LinksSection />
       <hr className="border-blue pb-7" />
       <SocialMediasSection />
