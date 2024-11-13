@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="bg-blue sticky left-0 right-0 top-0 flex justify-center">
+    <nav className="bg-blue sticky left-0 right-0 top-0 z-10 flex justify-center">
       <ul className="container flex items-center justify-between p-4">
         <Image
           src="/assets/logo.png"
