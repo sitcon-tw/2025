@@ -52,91 +52,93 @@ export default function CountdownPage() {
   }
 
   return (
-    <div className="mx-auto flex h-[289px] w-[642px] flex-col justify-between lg:w-[840px]">
-      <div className="border-light-brown flex h-[200px] w-full flex-col items-center rounded-3xl border px-24 py-5">
-        <h3 className="text-light-brown text-normal tracking-widest">
-          距 離 投 稿 截 止 還 有 :
-        </h3>
-        <div className="mt-5 flex w-full justify-between">
-          {Object.entries(timeLeft).map(([key, value]) => (
-            <div key={key} className="relative">
-              <div className="mb-2 flex flex-col items-center">
-                <motion.span
-                  key={value}
-                  initial={{ y: -30, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ type: "spring", stiffness: 100 }}
-                  className="text-light-brown text-6xl"
-                >
-                  {formatToTwoDigits(value)}
-                </motion.span>
-                <p className="text-light-brown text-normal font-light">
-                  {key.toUpperCase()}
-                </p>
+    <div className="hidden md:block">
+      <div className="mx-auto flex h-[289px] w-[642px] flex-col justify-between lg:w-[840px]">
+        <div className="border-light-brown flex h-[200px] w-full flex-col items-center rounded-3xl border px-24 py-5">
+          <h3 className="text-light-brown text-normal tracking-widest">
+            距 離 投 稿 截 止 還 有 :
+          </h3>
+          <div className="mt-5 flex w-full justify-between">
+            {Object.entries(timeLeft).map(([key, value]) => (
+              <div key={key} className="relative">
+                <div className="mb-2 flex flex-col items-center">
+                  <motion.span
+                    key={value}
+                    initial={{ y: -30, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", stiffness: 100 }}
+                    className="text-light-brown text-6xl"
+                  >
+                    {formatToTwoDigits(value)}
+                  </motion.span>
+                  <p className="text-light-brown text-normal font-light">
+                    {key.toUpperCase()}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="flex h-[67px] w-full justify-between">
-        <div className="border-light-brown flex h-full w-[377px] items-center justify-between rounded-2xl border px-5 lg:w-[552px]">
-          {/* calender icon */}
-          <Image
-            src="/calender.svg"
-            width={48}
-            height={48}
-            alt="calendar"
-            className="min-w-[48px]"
-          />
-          <div className="text-light-brown w-full justify-between pl-2 lg:flex lg:pl-12">
-            <p className="font-bold">截止日期</p>
-            <p>即日起至2024年1月21日(六) 23：59</p>
+            ))}
           </div>
         </div>
-        <motion.div
-          onHoverStart={() => setIsHovered(true)}
-          onHoverEnd={() => setIsHovered(false)}
-          className="bg-light-brown h-full w-[246px] rounded-2xl lg:w-[264]"
-        >
-          <Link
-            className="flex h-full w-full items-center justify-center"
-            href={"#"}
+        <div className="flex h-[67px] w-full justify-between">
+          <div className="border-light-brown flex h-full w-[377px] items-center justify-between rounded-2xl border px-5 lg:w-[552px]">
+            {/* calender icon */}
+            <Image
+              src="/calender.svg"
+              width={48}
+              height={48}
+              alt="calendar"
+              className="min-w-[48px]"
+            />
+            <div className="text-light-brown w-full justify-between pl-2 lg:flex lg:pl-12">
+              <p className="font-bold">截止日期</p>
+              <p>即日起至2024年1月21日(六) 23：59</p>
+            </div>
+          </div>
+          <motion.div
+            onHoverStart={() => setIsHovered(true)}
+            onHoverEnd={() => setIsHovered(false)}
+            className="bg-light-brown h-full w-[246px] rounded-2xl lg:w-[264]"
           >
-            <h3 className="text-red flex h-full w-1/2 items-center justify-center text-h3 font-bold">
-              立刻投稿
-            </h3>
-            <motion.div
-              animate={{
-                x: !isHovered ? 0 : 10,
-                y: !isHovered ? 0 : -10,
-                scale: !isHovered ? 1 : 1.2,
-              }}
+            <Link
+              className="flex h-full w-full items-center justify-center"
+              href={"#"}
             >
-              <Image
-                src="/north_east.svg"
-                width={40}
-                height={40}
-                alt="up_right_arrow"
-                className="mr-5"
-              />
-            </motion.div>
-            <motion.div
-              animate={{
-                x: !isHovered ? 0 : 10,
-                y: !isHovered ? 0 : -10,
-                scale: !isHovered ? 1 : 1.2,
-              }}
-              transition={{ delay: 0.2 }}
-            >
-              <Image
-                src="/north_east.svg"
-                width={40}
-                height={40}
-                alt="up_right_arrow"
-              />
-            </motion.div>
-          </Link>
-        </motion.div>
+              <h3 className="text-red flex h-full w-1/2 items-center justify-center text-h3 font-bold">
+                立刻投稿
+              </h3>
+              <motion.div
+                animate={{
+                  x: !isHovered ? 0 : 10,
+                  y: !isHovered ? 0 : -10,
+                  scale: !isHovered ? 1 : 1.2,
+                }}
+              >
+                <Image
+                  src="/north_east.svg"
+                  width={40}
+                  height={40}
+                  alt="up_right_arrow"
+                  className="mr-5"
+                />
+              </motion.div>
+              <motion.div
+                animate={{
+                  x: !isHovered ? 0 : 10,
+                  y: !isHovered ? 0 : -10,
+                  scale: !isHovered ? 1 : 1.2,
+                }}
+                transition={{ delay: 0.2 }}
+              >
+                <Image
+                  src="/north_east.svg"
+                  width={40}
+                  height={40}
+                  alt="up_right_arrow"
+                />
+              </motion.div>
+            </Link>
+          </motion.div>
+        </div>
       </div>
     </div>
   );
