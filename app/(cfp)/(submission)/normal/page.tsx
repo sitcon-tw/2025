@@ -13,7 +13,6 @@ export default function Page() {
         <Countdown />
       </div>
       <div className="md:mb-16">
-        <h2 className="text-h2-mobile md:text-h2">重要時程</h2>
         <Timeline />
       </div>
       <div className="md:mb-16">
