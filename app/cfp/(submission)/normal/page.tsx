@@ -333,7 +333,7 @@ export default function Page() {
         <h3 className="my-4 text-h3-mobile font-bold text-primary md:text-h3">
           稿件資訊
         </h3>
-        <div className="flex flex-col gap-8">
+        <div className="grid grid-cols-2 gap-8">
           <InformationField title="投稿類型 Type" tags={["required", "public"]}>
             請寫明所欲投稿為何種議程類型（Presentation、Espresso）。
           </InformationField>
@@ -621,17 +621,23 @@ export function InformationField({
     optional: "選填",
     public: "公開",
   };
+
+  const titleChinese = title.split(" ")[0];
+  const titleEnglish = title.split(" ")[1];
+
   return (
-    <div className="flex flex-col gap-2">
-      <div className="flex items-center gap-2">
-        <span className="text-lg font-bold leading-9 text-secondary">
-          {title}
+    <div className="relative flex flex-col gap-2 rounded-2xl bg-background-light p-4">
+      <div className="items-left flex flex-col">
+        <span className="text-3xl font-bold leading-9 text-secondary">
+          {titleChinese}
         </span>
+        <span className="text-lg font-medium leading-9 text-secondary">
+          {titleEnglish}
+        </span>
+      </div>
+      <div className="absolute right-3 top-5 gap-2">
         {tags.map((tag) => (
-          <span
-            key={tag}
-            className={`rounded-lg bg-background-light px-3 ${tag || ""}`}
-          >
+          <span key={tag} className={`ml-2 rounded-lg px-3 py-1 ${tag || ""}`}>
             {tagClassMap[tag]}
           </span>
         ))}
