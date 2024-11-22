@@ -174,11 +174,10 @@ export default function Page() {
         <p>
           歡迎寄信至{" "}
           <Link
-            target="_blank"
-            href="mailto:session@sitcon.org"
+            href="mailto:contact@sitcon.org"
             className="cursor-pointer text-primary underline"
           >
-            session@sitcon.org
+            contact@sitcon.org
           </Link>{" "}
           詢問，我們會儘速回應。
         </p>
@@ -271,11 +270,7 @@ export default function Page() {
               .toReversed()
               .map((year, index) => (
                 <span key={year}>
-                  <Link
-                    target="_blank"
-                    className="link"
-                    href={`https://sitcon.org/${year}`}
-                  >
+                  <Link className="link" href={`https://sitcon.org/${year}`}>
                     {year}
                   </Link>
                   {<span>{index == 10 ? "" : "、"}</span>}
@@ -382,24 +377,30 @@ export default function Page() {
           除了暱稱 /
           名字、自我介紹被用於宣傳，其餘資訊僅需提供一人作為代表（當稿件同時有多位講者時），供議程組於聯絡時使用。
         </p>
-        <div className="flex flex-col gap-8">
-          <InformationField title="電子郵件" tags={["required"]}>
+        <div className="grid grid-cols-2 max-[1024px]:grid-cols-1 gap-3">
+          <InformationField title="電子郵件 Email" tags={["required"]}>
             能讓大會聯絡的電子信箱。（注意：請您在大會的聯絡過程中，維持使用相同信箱）
           </InformationField>
-          <InformationField title="名字" tags={["required", "public"]}>
-            您的姓名。
+          <InformationField
+            title="暱稱 / 名字 Name"
+            tags={["required", "public"]}
+          >
+            公開於講者海報及網站的稱呼。
           </InformationField>
-          <InformationField title="暱稱" tags={["required", "public"]}>
-            公開於講者及網站的稱呼。
-          </InformationField>
-          <InformationField title="自我介紹" tags={["required", "public"]}>
+          <InformationField
+            title="自我介紹 Self Introduction"
+            tags={["required", "public"]}
+          >
             公開於講者海報及網站，將有助於會眾更加了解有關你的資訊。
           </InformationField>
 
-          <InformationField title="手機號碼" tags={["required"]}>
+          <InformationField title="手機號碼 Phone" tags={["required"]}>
             用於大會聯絡、確認資訊用的電話號碼。
           </InformationField>
-          <InformationField title="其他聯絡方式" tags={["required"]}>
+          <InformationField
+            title="其他聯絡方式 Other Contact Information"
+            tags={["required"]}
+          >
             其他任何我們能聯絡您的方式（如 Telegram
             ID、住處電話等），以利我們在審稿時即時向您釐清投稿資訊。
           </InformationField>
@@ -421,12 +422,12 @@ export default function Page() {
           </li>
           <li className="listItem">
             <span className="subTitle hightlight">表達能力：</span>
-            提供的資料是否完整、有條理、文句暢通。完整的資料能讓審稿委員更清楚了解演講細節。
+            提供的資料是否有條理、文句暢通，以及提供資料之完整度。完整的資料能讓審稿委員更清楚了解演講細節。
           </li>
           <li className="listItem">
             <span className="subTitle hightlight">適合聽眾：</span>稿件是否適合
             SITCON
-            大多數的與會者。經審稿委員評估比較熱門的議程，將安排在較大的演講廳。
+            大多數的與會者。經我們評估比較熱門的議程，將安排在較大的演講廳。
           </li>
         </ul>
       </section>
@@ -453,7 +454,8 @@ export default function Page() {
               。我們以稿件是否能夠吸引人、高品質、適合聽眾為考量。
             </li>
             <li className="listItem">
-              若審稿委員認為您的稿件比較適合其他形式，且原形式名額已經額滿、無法再增額時，議程組會向您提出轉換形式之建議。若經您評估後同意該建議，議程組將會為您轉換稿件類型或時間長度。
+              若 SITCON
+              議程組認為您的稿件比較適合另一種形式，或者該形式的名額已經額滿、無法再增額時」更正為「若審稿委員認為您的稿件比較適合其他形式，且原形式名額已經額滿、無法再增額時
             </li>
             <li className="listItem">
               SITCON 2025
@@ -474,11 +476,10 @@ export default function Page() {
           <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
             若有任何問題或投稿建議，請來信 SITCON 議程組信箱{" "}
             <Link
-              target="_blank"
-              href="mailto:session@sitcon.org"
+              href="mailto:contact@sitcon.org"
               className="cursor-pointer text-primary underline"
             >
-              <span className="hightlight subTitle">session@sitcon.org</span>
+              <span className="hightlight subTitle">contact@sitcon.org</span>
             </Link>{" "}
             。
           </p>
@@ -495,7 +496,6 @@ export default function Page() {
         <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
           今年將採取實體與線上同步之模式進行，除開放式議程外，年會當天將對每一場議程進行直播串流。如果您同意以
           <Link
-            target="_blank"
             href={"https://creativecommons.org/licenses/by/4.0/deed.zh-hant"}
             className="hightlight subTitle underline underline-offset-2"
           >
@@ -504,7 +504,6 @@ export default function Page() {
           </Link>
           授權釋出議程錄影，我們將會上傳至
           <Link
-            target="_blank"
             href={"https://sitcon.org/yt"}
             className="hightlight subTitle underline underline-offset-2"
           >
@@ -513,7 +512,6 @@ export default function Page() {
           </Link>
           及
           <Link
-            target="_blank"
             href={"https://odysee.com/@SITCON:f"}
             className="hightlight subTitle underline underline-offset-2"
           >
@@ -524,13 +522,13 @@ export default function Page() {
         </p>
         <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
           您為議程準備的其餘相關素材（如投影片），將於年會前由 SITCON
-          議程組向您蒐集素材連結，並整理在年會官方網站的議程資訊上。議程錄影與素材您可以自行決定在何種平台、以何種方式釋出，但鼓勵您選擇允許知識共享的{" "}
+          議程組向您蒐集素材連結，並整理在年會官方網站的議程資訊上。您可以自行決定在何種平台、以何種方式釋出，我們不會干涉，但鼓勵您選擇允許知識共享的
           <Link
-            target="_blank"
             href={"https://creativecommons.org/licenses/by/4.0/deed.zh-hant"}
             className="hightlight subTitle underline underline-offset-2"
           >
-            創用 CC 系列授權。
+            {" "}
+            創用 CC 系列授權。{" "}
           </Link>
         </p>
         <div className="py-1" />
@@ -551,11 +549,12 @@ export default function Page() {
           ，講者可以自由參加，並自行選擇最合適的場次。若您的稿件確認入選，議程組將再與您協調確切時間。為維護所有講者的權利，試講時間恕不接受更改，請您準時參與。
         </p>
         <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
-          所有場次將依報名情況舉辦，預計舉辦北部、中部、南部、線上場等，時間約為二月，地點另行通知。
+          所有場次將依報名情況舉辦，預計舉辦北部、中部、南部、線上場等，時間約為二月上旬至二月下旬，地點另行通知。
         </p>
         <div className="rounded-2xl border border-light-brown p-4">
           <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
-            試講交通補助：為確保年會議程品質，我們鼓勵講者參與試講，並將依照客運價格標準，補助講者至最近試講場地的全額或部分車資。若您的稿件被予以錄取，細節將於錄取後通知。
+            試講交通補助：為確保年會議程品質，大會鼓勵講者參與試講，並將依照客運價格標準，補助講者至最近試講場地的全額或部分車資。屆時若有需要，請保留試講當天的乘車票據，並於
+            3/8（六）年會當天繳交給工作人員。{" "}
           </p>
         </div>
       </section>
@@ -568,17 +567,16 @@ export default function Page() {
           彩排
         </h2>
         <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
-          SITCON 2025
-          將在年會前一天提供議程被錄取之講者彩排的機會。彩排能讓講者熟悉現場設備環境、攝影機位置，並且測試
-          Live Demo
-          情境。若講者想於正式演講前先熟悉場地與現場情況，歡迎於彩排當天前來參與，一起使年會議程品質更臻完美。
+          本屆 SITCON
+          將在年會前一天提供入選講者彩排的機會。彩排能讓講者熟悉現場設備環境、攝影機位置，並且測試
+          Live Demo 情境。希望講者能夠共同參與彩排，一起使年會議程品質更臻完美。
         </p>
         <ul className="leading-10">
           <li className="">日期：2025 年 3 月 7 日（五）。</li>
           <li className="">場地：議程廳與年會相同，細節將於稿件錄取後通知。</li>
           <li className="">
-            時間：一人約 5~10 分鐘，可練習操作設備或演練部分簡報內容。若有 Live
-            Demo 或特殊需求，可提前與議程組討論。
+            時間：一人約 5~10 分鐘。若有 Live Demo
+            或特殊需求，可提前與議程組安排時間。
           </li>
           <li className="">
             流程：講者操作設備，測試 Live Demo
@@ -614,7 +612,7 @@ export function InformationField({
   const titleEnglish = title.split(" ")[1];
 
   return (
-    <div className="relative mt-1 flex flex-col gap-2 rounded-2xl bg-background-light p-4">
+    <div className="relative flex flex-col gap-2 rounded-2xl bg-background-light p-4">
       <div className="items-left flex flex-col">
         <span className="text-3xl font-bold leading-9 text-secondary">
           {titleChinese}
