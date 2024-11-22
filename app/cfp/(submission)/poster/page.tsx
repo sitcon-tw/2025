@@ -77,7 +77,7 @@ export default function Page() {
           投稿說明
         </h2>
         <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
-          海報投稿希望以靜態海報呈現學生個人或團隊的專案或研究成果，作品以資訊相關領域為主，不限語言，不接受一稿多投，若為延伸作品需於投稿時載明。我們期望透過此方式使更多學生能有展現自我的機會，同時為會眾帶來不同形式的學習與交流。
+          海報投稿以靜態海報展出學生個人或團隊專案，作品以資訊相關領域為主，不限語言，不接受一稿多投，若為延伸作品需於投稿時載明。期望透過此方式使更多學生能有展現自我的機會，同時為會眾帶來不同形式的學習與交流。
         </p>
       </section>
 
@@ -141,23 +141,29 @@ export default function Page() {
               除了暱稱 /
               名字、自我介紹被用於宣傳，其餘資訊僅需提供一人作為代表（當稿件同時有多位講者時），供議程組於聯絡時使用。
             </p>
-            <div className="flex flex-col gap-8">
-              <InformationField title="電子郵件" tags={["required"]}>
+            <div className="grid grid-cols-2 gap-3 max-[1024px]:grid-cols-1">
+              <InformationField title="電子郵件 Email" tags={["required"]}>
                 能讓大會聯絡的電子信箱。（注意：請您在大會的聯絡過程中，維持使用相同信箱）
               </InformationField>
-              <InformationField title="名字" tags={["required", "public"]}>
-                您的姓名。
+              <InformationField
+                title="暱稱 / 名字 Name"
+                tags={["required", "public"]}
+              >
+                公開於講者海報及網站的稱呼。
               </InformationField>
-              <InformationField title="暱稱" tags={["required", "public"]}>
-                公開於講者及網站的稱呼。
-              </InformationField>
-              <InformationField title="自我介紹" tags={["required", "public"]}>
+              <InformationField
+                title="自我介紹 Self Introduction"
+                tags={["required", "public"]}
+              >
                 公開於講者海報及網站，將有助於會眾更加了解有關你的資訊。至多三人。
               </InformationField>
-              <InformationField title="手機號碼" tags={["required"]}>
+              <InformationField title="手機號碼 Phone" tags={["required"]}>
                 用於大會聯絡、確認資訊用的電話號碼。
               </InformationField>
-              <InformationField title="其他聯絡方式" tags={["required"]}>
+              <InformationField
+                title="其他聯絡方式 Other Contact Information"
+                tags={["required"]}
+              >
                 其他任何我們能聯絡您的方式（如 Telegram
                 ID、住處電話等），以利我們在審稿時即時向您釐清投稿資訊。
               </InformationField>
@@ -200,7 +206,7 @@ export default function Page() {
         <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
           您可以從{" "}
           <Link
-            href="https://sitcon.org/2024/poster/"
+            href="https://sitcon.org/2024"
             target="_blank"
             className="cursor-pointer text-primary underline"
           >
@@ -300,7 +306,6 @@ export default function Page() {
         <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
           今年將採取實體與線上同步之模式進行，除開放式議程外，年會當天將對每一場議程進行直播串流。如果您同意以
           <Link
-            target="_blank"
             href={"https://creativecommons.org/licenses/by/4.0/deed.zh-hant"}
             className="hightlight subTitle underline underline-offset-2"
           >
@@ -309,7 +314,6 @@ export default function Page() {
           </Link>
           授權釋出議程錄影，我們將會上傳至
           <Link
-            target="_blank"
             href={"https://sitcon.org/yt"}
             className="hightlight subTitle underline underline-offset-2"
           >
@@ -318,7 +322,6 @@ export default function Page() {
           </Link>
           及
           <Link
-            target="_blank"
             href={"https://odysee.com/@SITCON:f"}
             className="hightlight subTitle underline underline-offset-2"
           >
@@ -331,7 +334,6 @@ export default function Page() {
           您為議程準備的其餘相關素材（如投影片），將於年會前由 SITCON
           議程組向您蒐集素材連結，並整理在年會官方網站的議程資訊上。您可以自行決定在何種平台、以何種方式釋出，我們不會干涉，但鼓勵您選擇允許知識共享的
           <Link
-            target="_blank"
             href={"https://creativecommons.org/licenses/by/4.0/deed.zh-hant"}
             className="hightlight subTitle underline underline-offset-2"
           >
