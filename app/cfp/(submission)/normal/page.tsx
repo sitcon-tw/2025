@@ -328,12 +328,12 @@ export default function Page() {
         </h2>
         <p className="leading-10">
           Presentation 與
-          Espresso的投稿格式相同，除標示為公開之資訊會對外公布外，其餘僅供審稿委員於審稿時閱讀。
+          Espresso 的投稿格式相同，除標示為公開之資訊會對外公布外，其餘僅供審稿委員於審稿時閱讀。
         </p>
         <h3 className="my-4 text-h3-mobile font-bold text-primary md:text-h3">
           稿件資訊
         </h3>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 max-[1024px]:grid-cols-1 gap-3">
           <InformationField title="投稿類型 Type" tags={["required", "public"]}>
             請寫明所欲投稿為何種議程類型（Presentation、Espresso）。
           </InformationField>
@@ -391,7 +391,7 @@ export default function Page() {
           除了暱稱 /
           名字、自我介紹被用於宣傳，其餘資訊僅需提供一人作為代表（當稿件同時有多位講者時），供議程組於聯絡時使用。
         </p>
-        <div className="flex flex-col gap-8">
+        <div className="grid grid-cols-2 max-[1024px]:grid-cols-1 gap-3">
           <InformationField title="電子郵件 Email" tags={["required"]}>
             能讓大會聯絡的電子信箱。（注意：請您在大會的聯絡過程中，維持使用相同信箱）
           </InformationField>
@@ -628,7 +628,7 @@ export function InformationField({
   return (
     <div className="relative flex flex-col gap-2 rounded-2xl bg-background-light p-4">
       <div className="items-left flex flex-col">
-        <span className="text-3xl font-bold leading-9 text-secondary">
+        <span className="text-3xl font-bold leading-9 text-secondary w-[70%]">
           {titleChinese}
         </span>
         <span className="text-lg font-medium leading-9 text-secondary">
