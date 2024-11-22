@@ -181,8 +181,11 @@ html {
 
 /* class use in submission-format */
 .required {
+  @apply bg-primary text-background;
 }
 .optional {
+  @apply border-primary border-opacity-30 border-2 border-dashed
 }
 .public {
+  @apply border-primary border-opacity-30 border-2
 }
