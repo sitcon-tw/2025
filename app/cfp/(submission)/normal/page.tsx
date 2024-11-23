@@ -557,12 +557,11 @@ export default function Page() {
           ，講者可以自由參加，並自行選擇最合適的場次。若您的稿件確認入選，議程組將再與您協調確切時間。為維護所有講者的權利，試講時間恕不接受更改，請您準時參與。
         </p>
         <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
-          所有場次將依報名情況舉辦，預計舉辦北部、中部、南部、線上場等，時間約為二月上旬至二月下旬，地點另行通知。
+          所有場次將依報名情況舉辦，預計舉辦北部、中部、南部、線上場等，時間約為二月，地點另行通知。
         </p>
         <div className="rounded-2xl border border-light-brown p-4">
           <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
-            試講交通補助：為確保年會議程品質，大會鼓勵講者參與試講，並將依照客運價格標準，補助講者至最近試講場地的全額或部分車資。屆時若有需要，請保留試講當天的乘車票據，並於
-            3/8（六）年會當天繳交給工作人員。{" "}
+            試講交通補助：為確保年會議程品質，我們鼓勵講者參與試講，並將依照客運價格標準，補助講者至最近試講場地的全額或部分車資。若您的稿件被予以錄取，細節將於錄取後通知。
           </p>
         </div>
       </section>
@@ -575,16 +574,17 @@ export default function Page() {
           彩排
         </h2>
         <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
-          本屆 SITCON
-          將在年會前一天提供入選講者彩排的機會。彩排能讓講者熟悉現場設備環境、攝影機位置，並且測試
-          Live Demo 情境。希望講者能夠共同參與彩排，一起使年會議程品質更臻完美。
+          SITCON 2025
+          將在年會前一天提供議程被錄取之講者彩排的機會。彩排能讓講者熟悉現場設備環境、攝影機位置，並且測試
+          Live Demo
+          情境。若講者想於正式演講前先熟悉場地與現場情況，歡迎於彩排當天前來參與，一起使年會議程品質更臻完美。
         </p>
         <ul className="leading-10">
           <li className="">日期：2025 年 3 月 7 日（五）。</li>
           <li className="">場地：議程廳與年會相同，細節將於稿件錄取後通知。</li>
           <li className="">
-            時間：一人約 5~10 分鐘。若有 Live Demo
-            或特殊需求，可提前與議程組安排時間。
+            時間：一人約 5~10 分鐘，可練習操作設備或演練部分簡報內容。若有 Live
+            Demo 或特殊需求，可提前與議程組討論。
           </li>
           <li className="">
             流程：講者操作設備，測試 Live Demo
