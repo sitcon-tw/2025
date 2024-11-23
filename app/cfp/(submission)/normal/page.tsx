@@ -322,12 +322,12 @@ export default function Page() {
         </h2>
         <p className="leading-10">
           Presentation 與 Espresso
-          的投稿格式相同，除標示為公開之資訊會對外公布外，其餘僅供審稿委員於審稿時閱讀。
+          的投稿格式相同，除標示為public之資訊會對外公布外，其餘僅供審稿委員於審稿時閱讀。
         </p>
         <h3 className="my-4 text-h3-mobile font-bold text-primary md:text-h3">
           稿件資訊
         </h3>
-        <div className="grid grid-cols-2 gap-3 max-[1024px]:grid-cols-1">
+        <div className="flex flex-col gap-8">
           <InformationField title="投稿類型 Type" tags={["required", "public"]}>
             請寫明所欲投稿為何種議程類型（Presentation、Espresso）。
           </InformationField>
@@ -382,30 +382,24 @@ export default function Page() {
           除了暱稱 /
           名字、自我介紹被用於宣傳，其餘資訊僅需提供一人作為代表（當稿件同時有多位講者時），供議程組於聯絡時使用。
         </p>
-        <div className="grid grid-cols-2 gap-3 max-[1024px]:grid-cols-1">
-          <InformationField title="電子郵件 Email" tags={["required"]}>
+        <div className="flex flex-col gap-8">
+          <InformationField title="電子郵件" tags={["required"]}>
             能讓大會聯絡的電子信箱。（注意：請您在大會的聯絡過程中，維持使用相同信箱）
           </InformationField>
-          <InformationField title="名字 Name" tags={["required", "public"]}>
+          <InformationField title="名字" tags={["required", "public"]}>
             您的姓名。
           </InformationField>
-          <InformationField title="暱稱 Nick" tags={["required", "public"]}>
+          <InformationField title="暱稱" tags={["required", "public"]}>
             公開於講者及網站的稱呼。
           </InformationField>
-          <InformationField
-            title="自我介紹 Self Introduction"
-            tags={["required", "public"]}
-          >
+          <InformationField title="自我介紹" tags={["required", "public"]}>
             公開於講者海報及網站，將有助於會眾更加了解有關你的資訊。
           </InformationField>
 
-          <InformationField title="手機號碼 Phone" tags={["required"]}>
+          <InformationField title="手機號碼" tags={["required"]}>
             用於大會聯絡、確認資訊用的電話號碼。
           </InformationField>
-          <InformationField
-            title="其他聯絡方式 Other Contact Information"
-            tags={["required"]}
-          >
+          <InformationField title="其他聯絡方式" tags={["required"]}>
             其他任何我們能聯絡您的方式（如 Telegram
             ID、住處電話等），以利我們在審稿時即時向您釐清投稿資訊。
           </InformationField>
@@ -611,9 +605,9 @@ export function InformationField({
   children: ReactNode;
 }) {
   const tagClassMap = {
-    required: "必填",
+    required: "required",
     optional: "選填",
-    public: "公開",
+    public: "public",
   };
   return (
     <div className="mt-1 flex flex-col gap-2">

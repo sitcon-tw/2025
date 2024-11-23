@@ -173,7 +173,7 @@ export default function Page() {
               請填寫 1~4 個該議程相關的{" "}
               <span className="hightlight subTitle">領域與知識標籤</span>{" "}
               ，例如：ML、Data
-              Science、資安紅隊、blockchain、社團等；錄取後會與講者溝通微調後公開於官網議程表。
+              Science、資安紅隊、blockchain、社團等；錄取後會與講者溝通微調後public於官網議程表。
             </InformationField>
             <InformationField title="詳細說明 Description" tags={["required"]}>
               不限字數，請說明這個議程您認為重要的相關細節，以利審稿委員更瞭解您的議程。
@@ -191,29 +191,23 @@ export default function Page() {
             除了暱稱 /
             名字、自我介紹被用於宣傳，其餘資訊僅需提供一人作為代表（當稿件同時有多位講者時），供議程組於聯絡時使用。
           </p>
-          <div className="grid grid-cols-2 gap-3 max-[1024px]:grid-cols-1">
-            <InformationField title="電子郵件 Email" tags={["required"]}>
+          <div className="flex flex-col gap-8">
+            <InformationField title="電子郵件" tags={["required"]}>
               能讓大會聯絡的電子信箱。（注意：請您在大會的聯絡過程中，維持使用相同信箱）
             </InformationField>
-            <InformationField
-              title="暱稱 / 名字 Name"
-              tags={["required", "public"]}
-            >
-              公開於講者海報及網站的稱呼。
+            <InformationField title="名字" tags={["required", "public"]}>
+              您的姓名。
             </InformationField>
-            <InformationField
-              title="自我介紹 Self Introduction"
-              tags={["required", "public"]}
-            >
+            <InformationField title="暱稱" tags={["required", "public"]}>
+              公開於講者及網站的稱呼。
+            </InformationField>
+            <InformationField title="自我介紹" tags={["required", "public"]}>
               公開於講者海報及網站，將有助於會眾更加了解有關你的資訊。
             </InformationField>
-            <InformationField title="手機號碼 Phone" tags={["required"]}>
+            <InformationField title="手機號碼" tags={["required"]}>
               用於大會聯絡、確認資訊用的電話號碼。
             </InformationField>
-            <InformationField
-              title="其他聯絡方式 Other Contact Information"
-              tags={["required"]}
-            >
+            <InformationField title="其他聯絡方式" tags={["required"]}>
               其他任何我們能聯絡您的方式（如 Telegram
               ID、住處電話等），以利我們在審稿時即時向您釐清投稿資訊。
             </InformationField>
