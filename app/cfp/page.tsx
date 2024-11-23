@@ -66,6 +66,7 @@ export default function Home() {
                   </Link>
                 </div>
                 <Link
+                  target="_blank"
                   href="/cfp/deadline.ics"
                   className="w-auto rounded-[50px] bg-[#FFFFFF] px-8 py-1 text-center transition hover:bg-foreground max-sm:w-full"
                 >
@@ -112,12 +113,14 @@ export default function Home() {
                   </p>
                   <div className="flex gap-6 pt-14 max-[1024px]:grid max-[1024px]:grid-cols-8 max-[1024px]:gap-5 max-sm:grid-cols-2">
                     <Link
+                      target="_blank"
                       href="https://groups.google.com/g/sitcon-general/"
                       className="w-[140px] rounded-[50px] bg-secondary py-3 text-center font-bold transition hover:bg-foreground max-[1024px]:col-span-5 max-[1024px]:w-auto max-[1024px]:rounded-lg max-[1024px]:text-[18px] max-[712px]:my-auto max-[712px]:text-[14px] max-sm:col-span-1 max-sm:rounded-[72px] max-sm:text-[18px] max-sm:font-normal"
                     >
                       訂閱郵件論壇
                     </Link>
                     <Link
+                      target="_blank"
                       href="https://gitlab.com/sitcon-tw/2025/board/-/boards"
                       className="w-[140px] rounded-[50px] bg-secondary py-3 text-center font-bold transition hover:bg-foreground max-[1024px]:col-span-3 max-[1024px]:w-auto max-[1024px]:rounded-lg max-[1024px]:text-[18px] max-[712px]:my-auto max-[712px]:text-[14px] max-sm:col-span-1 max-sm:rounded-[72px] max-sm:text-[18px] max-sm:font-normal"
                     >

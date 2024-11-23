@@ -54,6 +54,7 @@ export default function CountdownPage() {
         </div>
         <div className="h-full w-[40%] rounded-2xl bg-foreground transition-all duration-[0.4s] hover:bg-primary">
           <Link
+            target="_blank"
             className="flex h-full w-full items-center justify-center"
             href={"/cfp/deadline.ics"}
           >

@@ -59,6 +59,7 @@ function Links() {
         { text: "開放式議程投稿", href: "/cfp/undefined" },
         { text: "海報投稿", href: "/cfp/poster" },
       ]}
+      internal
     />
   );
 }
@@ -71,6 +72,7 @@ function Support() {
         // { text: "我要贊助", href: "https://sitcon.org/donate" },
         { text: "索取贊助徵求書", href: "https://i.sitcon.org/2025cfs-form/" },
       ]}
+      internal={false}
     />
   );
 }
@@ -103,6 +105,7 @@ function Contact() {
       links={[
         { text: "contact@sitcon.org", href: "mailto:contact@sitcon.org" },
       ]}
+      internal={false}
     />
   );
 }
@@ -153,7 +156,15 @@ interface LinkText {
   href: string;
 }
 
-function FooterSubMenu({ title, links }: { title: string; links: LinkText[] }) {
+function FooterSubMenu({
+  title,
+  links,
+  internal,
+}: {
+  title: string;
+  links: LinkText[];
+  internal: boolean;
+}) {
   return (
     <ul className="flex flex-col gap-2">
       <li className="mb-2 font-bold">{title}</li>
@@ -161,7 +172,11 @@ function FooterSubMenu({ title, links }: { title: string; links: LinkText[] }) {
         const { text, href } = link;
         return (
           <li key={href}>
-            <Link className="hover:opacity-70" href={href}>
+            <Link
+              target={internal ? "" : "_blank"}
+              className="hover:opacity-70"
+              href={href}
+            >
               {text}
             </Link>
           </li>
@@ -186,7 +201,7 @@ function FooterSubMenuGrid({
           const { text, href } = link;
           return (
             <li key={href}>
-              <Link className="hover:opacity-70" href={href}>
+              <Link target="_blank" className="hover:opacity-70" href={href}>
                 {text}
               </Link>
             </li>
