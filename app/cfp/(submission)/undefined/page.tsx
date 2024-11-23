@@ -79,7 +79,8 @@ export default function Page() {
         </h2>
         <p className="text-normal-mobile font-normal leading-loose tracking-wider md:text-normal">
           開放式議程為<span className="hightlight"> 40 </span> 分鐘和
-          開放式議程為<span className="hightlight"> 90 </span> 分鐘兩種時長
+          開放式議程為<span className="hightlight"> 90 </span>{" "}
+          分鐘兩種時長，該議程不限定進行方式，希望跳脫傳統議程框架，透過雙向互動、實作等，任何您想得到的非傳統形式進行此場議程。
         </p>
       </section>
       <section
