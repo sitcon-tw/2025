@@ -326,50 +326,41 @@ export default function Page() {
           稿件資訊
         </h3>
         <div className="flex flex-col gap-4">
-          <InformationField title="投稿類型 Type" tags={["required", "public"]}>
+          <InformationField title="投稿類型" tags={["required", "public"]}>
             請寫明所欲投稿為何種議程類型（Presentation、Espresso）。
           </InformationField>
-          <InformationField title="題目 Title" tags={["required", "public"]}>
+          <InformationField title="題目" tags={["required", "public"]}>
             請不要超出<span className="subTitle hightlight"> 20 </span>
             字，題目無須與年會主題相關。
           </InformationField>
-          <InformationField title="摘要 Abstract" tags={["required", "public"]}>
+          <InformationField title="摘要" tags={["required", "public"]}>
             <span className="hightlight subTitle"> 150~250 </span>
             字，使用於宣傳與網站公告。
           </InformationField>
-          <InformationField title="演講大綱 Outline" tags={["required"]}>
+          <InformationField title="演講大綱" tags={["required"]}>
             請說明議程的內容大綱與時間分配。若為多位講者共同分享，請說明各個講者如何分配演講內容。
           </InformationField>
-          <InformationField
-            title="目標受眾 Target Audience"
-            tags={["required"]}
-          >
+          <InformationField title="目標受眾" tags={["required"]}>
             請說明您期待該議程的目標受眾為怎麼樣的人。例如：「嚮往成為前端開發者的初學者」、「欲精進某技能的後端工程師」等。在這邊為您提供過往的會眾比例：大學生
             58%、高中/職生 22%、社會人士 8%、研究生 11%、國中生 1%
           </InformationField>
-          <InformationField
-            title="先備知識 Prior Knowledge"
-            tags={["required", "public"]}
-          >
+          <InformationField title="先備知識" tags={["required", "public"]}>
             請說明該議程的與會者所需具備的{" "}
             <span className="subTitle hightlight">先備知識</span> 例如：「能理解
             Python 基礎語法」、「能熟練運用 Class 與 OOP」等。
           </InformationField>
-          <InformationField
-            title="主題標籤 Labels"
-            tags={["required", "public"]}
-          >
+          <InformationField title="主題標籤" tags={["required", "public"]}>
             請填寫 1~4 個該議程相關的{" "}
             <span className="hightlight subTitle">領域與知識標籤</span>{" "}
             例如：ML、Data
             Science、資安紅隊、blockchain、社團等；審稿委員將會參考此欄位了解件著重的面向，錄取後議程組也會參考此欄位，在與您溝通後挑選合適的標籤呈現於官網議程表上。
           </InformationField>
-          <InformationField title="詳細說明 Description" tags={["required"]}>
+          <InformationField title="詳細說明" tags={["required"]}>
             不限字數，請盡可能{" "}
             <span className="hightlight subTitle">詳細說明</span>{" "}
             這個議程的相關細節，如議程架構、想傳達的內容及您認為可能可以說服審稿委員選擇您的稿件之資訊等，以利審稿委員更瞭解您的議程及想法。
           </InformationField>
-          <InformationField title="附件 Attachment" tags={["optional"]}>
+          <InformationField title="附件" tags={["optional"]}>
             可以附上程式碼、投影片草稿或任何您認為有助於我們瞭解您議程的附件，請再三確認是否有開啟共用權限。
           </InformationField>
         </div>
@@ -607,17 +598,11 @@ export function InformationField({
     optional: "選填",
     public: "公開",
   };
-  const titleChinese = title.split(" ")[0];
-  const titleEnglish = title.split(" ")[1];
-
   return (
     <div className="relative flex flex-col gap-2 rounded-2xl bg-background-light p-6">
       <div className="items-left flex flex-col">
         <span className="text-3xl font-bold leading-9 text-secondary">
-          {titleChinese}
-        </span>
-        <span className="text-lg font-medium leading-9 text-secondary">
-          {titleEnglish}
+          {title}
         </span>
       </div>
       <div className="absolute right-5 top-7 gap-2">

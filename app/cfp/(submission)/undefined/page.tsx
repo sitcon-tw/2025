@@ -127,58 +127,40 @@ export default function Page() {
             稿件資訊
           </h3>
           <div className="flex flex-col gap-4">
-            <InformationField title="題目 Title" tags={["required", "public"]}>
+            <InformationField title="題目" tags={["required", "public"]}>
               請不要超出<span className="hightlight subTitle"> 20 </span>字。
             </InformationField>
-            <InformationField
-              title="摘要 Abstract"
-              tags={["required", "public"]}
-            >
+            <InformationField title="摘要" tags={["required", "public"]}>
               建議<span className="hightlight subTitle"> 150~250 </span>
               字，使用於宣傳與網站公告。
             </InformationField>
-            <InformationField
-              title="為何選擇開放式議程 Format Preference Explanation"
-              tags={["required"]}
-            >
+            <InformationField title="為何選擇開放式議程" tags={["required"]}>
               請簡述為什麼您認為開放式議程更適合此議程的內容或主題呈現。這部分可以包括您希望透過開放式議程達成的效果、氣氛或參與方式，以便審稿委員理解您的設計考量。
             </InformationField>
-            <InformationField
-              title="進行模式 Method"
-              tags={["required", "public"]}
-            >
+            <InformationField title="進行模式" tags={["required", "public"]}>
               不限字數，請詳細說明該議程預計如何和會眾互動，以及是否需要額外的工具，此項目將幫助會眾預期該如何參與此議程。
             </InformationField>
-            <InformationField title="議程大綱 Outline" tags={["required"]}>
+            <InformationField title="議程大綱" tags={["required"]}>
               請說明該開放式議程的大綱及時間長度規劃。
             </InformationField>
-            <InformationField
-              title="目標受眾 Target Audience"
-              tags={["required"]}
-            >
+            <InformationField title="目標受眾" tags={["required"]}>
               請說明您期待該議程的目標受眾為怎麼樣的人。例如：「嚮往成為前端開發者的初學者」、「不知道該不該讀研究所的學生」等。
             </InformationField>
-            <InformationField
-              title="先備知識 Prior Knowledge"
-              tags={["required", "public"]}
-            >
+            <InformationField title="先備知識" tags={["required", "public"]}>
               請說明該議程的與會者所需具備的{" "}
               <span className="hightlight subTitle">先備知識</span>
               。例如：「能理解 Python 基礎語法」、「略懂 108 課綱現況」等。
             </InformationField>
-            <InformationField
-              title="主題標籤 Labels"
-              tags={["required", "public"]}
-            >
+            <InformationField title="主題標籤" tags={["required", "public"]}>
               請填寫 1~4 個該議程相關的{" "}
               <span className="hightlight subTitle">領域與知識標籤</span>{" "}
               ，例如：ML、Data
               Science、資安紅隊、blockchain、社團等；錄取後會與講者溝通微調後公開於官網議程表。
             </InformationField>
-            <InformationField title="詳細說明 Description" tags={["required"]}>
+            <InformationField title="詳細說明" tags={["required"]}>
               不限字數，請說明這個議程您認為重要的相關細節，以利審稿委員更瞭解您的議程。
             </InformationField>
-            <InformationField title="附件 Attachment" tags={["optional"]}>
+            <InformationField title="附件" tags={["optional"]}>
               可以附上程式碼、投影片草稿或任何您認為有助於我們瞭解您議程的附件，請再三確認是否有開啟共用權限。
             </InformationField>
           </div>
