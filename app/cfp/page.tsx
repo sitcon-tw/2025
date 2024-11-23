@@ -106,12 +106,21 @@ export default function Home() {
                   <p className="text-justify text-normal leading-8 text-foreground">
                     SITCON
                     是個開放的社群，許多籌備的相關事項都會在公開的郵件論壇上進行討論，如果有興趣參與，歡迎訂閱
-                    SITCON 的郵件論壇並貢獻你的想法！
+                    SITCON
+                    的郵件論壇並貢獻你的想法，如果想成為明年年會的籌備團隊，也可以填寫跳坑表單，我們會在
+                    2026 年會開始籌備時通知你！
                     <br />
-                    <br /> 若你想進一步了解過往討論的內容，也歡迎到 GitLab
-                    上查看 SITCON 2025 的籌備歷程。
+                    <br /> 若你想進一步了解 SITCON 年會籌備與討論的內容，歡迎到
+                    GitLab 上查看 SITCON 2025 的籌備歷程。
                   </p>
                   <div className="flex gap-6 pt-14 max-[1024px]:grid max-[1024px]:grid-cols-8 max-[1024px]:gap-5 max-sm:grid-cols-2">
+                    <Link
+                      target="_blank"
+                      href="https://forms.gle/joSN37ABbBrG8S387"
+                      className="w-[140px] rounded-[50px] bg-secondary py-3 text-center font-bold transition hover:bg-foreground max-[1024px]:col-span-5 max-[1024px]:w-auto max-[1024px]:rounded-lg max-[1024px]:text-[18px] max-[712px]:my-auto max-[712px]:text-[14px] max-sm:col-span-1 max-sm:rounded-[72px] max-sm:text-[18px] max-sm:font-normal"
+                    >
+                      預約跳坑表單
+                    </Link>
                     <Link
                       target="_blank"
                       href="https://groups.google.com/g/sitcon-general/"
@@ -245,7 +254,7 @@ function PhoneLayout() {
           <Link href="mailto:contact@sitcon.org" className="link">
             contact@sitcon.org
           </Link>{" "}
-          聯絡我們，商討更多的合作方式！
+          聯絡我們，我們將有專人與您商討更多的合作方式！
         </p>
         <div className="flex-row pt-16">
           {/* <a
@@ -296,7 +305,7 @@ function TabletLayout() {
             >
               contact@sitcon.org
             </Link>{" "}
-            聯絡我們，商討更多的合作方式！
+            聯絡我們，我們將有專人與您商討更多的合作方式！
           </p>
           <div className="flex-row pt-8">
             {/* <a
@@ -362,7 +371,7 @@ function DesktopLayout() {
             >
               contact@sitcon.org
             </Link>{" "}
-            聯絡我們，商討更多的合作方式！
+            聯絡我們，我們將有專人與您商討更多的合作方式！
           </p>
           <div className="flex-row pt-8">
             {/* <a

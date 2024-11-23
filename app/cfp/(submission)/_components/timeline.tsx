@@ -44,7 +44,7 @@ export default function Timeline({ isPoster }: { isPoster?: boolean }) {
                 />
               </svg>
               <span className="material-icons-big">flag</span>
-              <p>11.22.2024</p>
+              <p>2024-11-23</p>
               <h3 className="w-max text-h3">開始徵稿</h3>
             </div>
 
@@ -61,7 +61,7 @@ export default function Timeline({ isPoster }: { isPoster?: boolean }) {
               <span className="material-icons-big text-foreground">
                 event_busy
               </span>
-              <p>01.21</p>
+              <p>01-21 23:59</p>
               <h3 className="w-max text-h3">投稿截止</h3>
             </div>
 
@@ -92,7 +92,7 @@ export default function Timeline({ isPoster }: { isPoster?: boolean }) {
                   />
                 </svg>
                 <span className="material-icons-big">route</span>
-                <p>02.16</p>
+                <p>02-16</p>
                 <h3 className="w-max text-h3">錄取海報檔案上傳截止</h3>
               </div>
             ) : (
@@ -122,7 +122,7 @@ export default function Timeline({ isPoster }: { isPoster?: boolean }) {
                     />
                   </svg>
                   <span className="material-icons-big">route</span>
-                  <p>03.07</p>
+                  <p>03-07</p>
                   <h3 className="w-max text-h3">彩排</h3>
                 </div>
               </>
@@ -139,7 +139,7 @@ export default function Timeline({ isPoster }: { isPoster?: boolean }) {
                 />
               </svg>
               <span className="material-icons-big text-foreground">groups</span>
-              <p>03.08</p>
+              <p>03-08</p>
               <h3 className="w-max text-h3">年會</h3>
             </div>
           </div>
@@ -151,11 +151,11 @@ export default function Timeline({ isPoster }: { isPoster?: boolean }) {
         <ul className="list-disc space-y-4 pl-5">
           <li>
             <span className="font-bold">開始徵稿</span>
-            ：2024 年 11 月 22 日
+            ：2024 年 11 月 22 日（六）
           </li>
           <li>
             <span className="font-bold">投稿截止</span>
-            ：2025 年 1 月 21 日
+            ：2025 年 1 月 21 日（二） 23:59
           </li>
           <li>
             <span className="font-bold">錄取通知</span>
@@ -165,7 +165,7 @@ export default function Timeline({ isPoster }: { isPoster?: boolean }) {
             <>
               <li>
                 <span className="font-bold">錄取海報檔案上傳截止</span>
-                ：2025 年 2 月 16 日
+                ：2025 年 2 月 16 日（日）
               </li>
             </>
           ) : (
@@ -176,13 +176,13 @@ export default function Timeline({ isPoster }: { isPoster?: boolean }) {
               </li>
               <li>
                 <span className="font-bold">彩排</span>
-                ：2025 年 3 月 7 日
+                ：2025 年 3 月 7 日（五）
               </li>
             </>
           )}
           <li>
             <span className="font-bold">年會</span>
-            ：2025 年 3 月 8 日
+            ：2025 年 3 月 8 日（六）
           </li>
         </ul>
       </div>

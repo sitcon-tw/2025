@@ -11,12 +11,12 @@ export default function Page() {
     { id: "important-dates", title: "重要時程" },
     { id: "session-types", title: "投稿說明" },
     { id: "submission-topics", title: "投稿方式" },
+    { id: "poster-examples", title: "海報格式範例" },
     { id: "review-process", title: "審稿方式" },
     { id: "code-of-conduct", title: "Code of Conduct" },
     { id: "submission-guidelines", title: "投稿注意事項" },
     { id: "license", title: "授權" },
-    { id: "practice-talk", title: "試講" },
-    { id: "rehearsal", title: "彩排" },
+    { id: "poster-upload", title: "海報上傳與佈展" },
     { id: "qa", title: "Q & A" },
   ];
 
@@ -37,10 +37,10 @@ export default function Page() {
         <p>
           歡迎寄信至{" "}
           <Link
-            href="mailto:contact@sitcon.org"
+            href="mailto:session@sitcon.org"
             className="cursor-pointer text-primary underline"
           >
-            contact@sitcon.org
+            session@sitcon.org
           </Link>{" "}
           詢問，我們會儘速回應。
         </p>
@@ -176,7 +176,7 @@ export default function Page() {
       </section>
 
       <section
-        id="review-process"
+        id="poster-examples"
         className="my-4 -mt-[60px] space-y-4 pt-[80px] md:mb-16"
       >
         <h2 className="text-h2-mobile font-extrabold text-primary md:text-h2">
@@ -266,10 +266,10 @@ export default function Page() {
           <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
             若有任何問題或投稿建議，請來信 SITCON 議程組信箱{" "}
             <Link
-              href="mailto:contact@sitcon.org"
+              href="mailto:session@sitcon.org"
               className="cursor-pointer text-primary underline"
             >
-              <span className="hightlight subTitle">contact@sitcon.org</span>
+              <span className="hightlight subTitle">session@sitcon.org</span>
             </Link>{" "}
             。
           </p>
@@ -298,7 +298,7 @@ export default function Page() {
       </section>
 
       <section
-        id="practice-talk"
+        id="poster-upload"
         className="my-4 -mt-[60px] space-y-4 pt-[80px] md:mb-16"
       >
         <h2 className="text-h2-mobile font-extrabold text-primary md:text-h2">

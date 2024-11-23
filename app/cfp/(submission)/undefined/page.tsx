@@ -11,7 +11,7 @@ export default function Page() {
     { id: "important-dates", title: "重要時程" },
     { id: "session-types", title: "議程說明" },
     { id: "what-is-open-session", title: "什麼是開放式議程？" },
-    { id: "submission-topics", title: "投稿方式" },
+    { id: "submission-topics", title: "投稿格式" },
     { id: "review-process", title: "審稿方式" },
     { id: "code-of-conduct", title: "Code of Conduct" },
     { id: "submission-guidelines", title: "投稿注意事項" },
@@ -38,10 +38,10 @@ export default function Page() {
         <p>
           歡迎寄信至{" "}
           <Link
-            href="mailto:contact@sitcon.org"
+            href="mailto:session@sitcon.org"
             className="cursor-pointer text-primary underline"
           >
-            contact@sitcon.org
+            session@sitcon.org
           </Link>{" "}
           詢問，我們會儘速回應。
         </p>
@@ -120,7 +120,7 @@ export default function Page() {
         className="my-4 -mt-[60px] space-y-4 pt-[80px] md:mb-16"
       >
         <h2 className="text-h2-mobile font-extrabold text-primary md:text-h2">
-          投稿方式
+          投稿格式
         </h2>
         <div className="space-y-4">
           <h3 className="text-h3-mobile font-bold text-primary md:text-h3">
@@ -273,10 +273,10 @@ export default function Page() {
           <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
             若有任何問題或投稿建議，請來信 SITCON 議程組信箱{" "}
             <Link
-              href="mailto:contact@sitcon.org"
+              href="mailto:session@sitcon.org"
               className="cursor-pointer text-primary underline"
             >
-              <span className="hightlight subTitle">contact@sitcon.org</span>
+              <span className="hightlight subTitle">session@sitcon.org</span>
             </Link>{" "}
             。
           </p>
@@ -381,10 +381,6 @@ export default function Page() {
           <li className="">
             時間：一人約 5~10 分鐘，可練習操作設備或演練部分簡報內容。若有 Live
             Demo 或特殊需求，可提前與議程組討論。
-          </li>
-          <li className="">
-            流程：講者操作設備，測試 Live Demo
-            連結及切換方式，也可以演練部分簡報內容。
           </li>
           <li className="">
             提供設備：與年會當天場地的設備相同，例如麥克風、倒數計時器等。
