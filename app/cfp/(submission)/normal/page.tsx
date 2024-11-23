@@ -530,14 +530,13 @@ export default function Page() {
         </p>
         <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
           您為議程準備的其餘相關素材（如投影片），將於年會前由 SITCON
-          議程組向您蒐集素材連結，並整理在年會官方網站的議程資訊上。您可以自行決定在何種平台、以何種方式釋出，我們不會干涉，但鼓勵您選擇允許知識共享的
+          議程組向您蒐集素材連結，並整理在年會官方網站的議程資訊上。議程錄影與素材您可以自行決定在何種平台、以何種方式釋出，但鼓勵您選擇允許知識共享的{" "}
           <Link
             target="_blank"
             href={"https://creativecommons.org/licenses/by/4.0/deed.zh-hant"}
             className="hightlight subTitle underline underline-offset-2"
           >
-            {" "}
-            創用 CC 系列授權。{" "}
+            創用 CC 系列授權。
           </Link>
         </p>
         <div className="py-1" />
