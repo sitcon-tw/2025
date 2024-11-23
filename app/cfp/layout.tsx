@@ -17,7 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       type: "website",
       locale: "zh_TW",
-      url: "https://sitcon.org/2025/",
+      url: "https://sitcon.org/2025/cfp/",
       title,
       description,
       siteName: "SITCON",
