@@ -316,8 +316,8 @@ export default function Page() {
           投稿格式
         </h2>
         <p className="leading-10">
-          Presentation 與 Espresso
-          的投稿格式相同，除標示為public之資訊會對外公布外，其餘僅供審稿委員於審稿時閱讀。
+          Presentation 與
+          Espresso 的投稿格式相同，除標示為公開之資訊會對外公布外，其餘僅供審稿委員於審稿時閱讀。
         </p>
         <h3 className="my-4 text-h3-mobile font-bold text-primary md:text-h3">
           稿件資訊
@@ -603,9 +603,9 @@ export function InformationField({
   children: ReactNode;
 }) {
   const tagClassMap = {
-    required: "required",
+    required: "必填",
     optional: "選填",
-    public: "public",
+    public: "公開",
   };
 
   const titleChinese = title.split(" ")[0];

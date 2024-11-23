@@ -306,6 +306,7 @@ export default function Page() {
         <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
           今年將採取實體與線上同步之模式進行，除開放式議程外，年會當天將對每一場議程進行直播串流。如果您同意以
           <Link
+            target="_blank"
             href={"https://creativecommons.org/licenses/by/4.0/deed.zh-hant"}
             className="hightlight subTitle underline underline-offset-2"
           >
@@ -314,6 +315,7 @@ export default function Page() {
           </Link>
           授權釋出議程錄影，我們將會上傳至
           <Link
+            target="_blank"
             href={"https://sitcon.org/yt"}
             className="hightlight subTitle underline underline-offset-2"
           >
@@ -322,6 +324,7 @@ export default function Page() {
           </Link>
           及
           <Link
+            target="_blank"
             href={"https://odysee.com/@SITCON:f"}
             className="hightlight subTitle underline underline-offset-2"
           >
@@ -334,6 +337,7 @@ export default function Page() {
           您為議程準備的其餘相關素材（如投影片），將於年會前由 SITCON
           議程組向您蒐集素材連結，並整理在年會官方網站的議程資訊上。您可以自行決定在何種平台、以何種方式釋出，我們不會干涉，但鼓勵您選擇允許知識共享的
           <Link
+            target="_blank"
             href={"https://creativecommons.org/licenses/by/4.0/deed.zh-hant"}
             className="hightlight subTitle underline underline-offset-2"
           >
