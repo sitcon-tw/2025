@@ -126,7 +126,7 @@ export default function Page() {
           <h3 className="text-h3-mobile font-bold text-primary md:text-h3">
             稿件資訊
           </h3>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-4">
             <InformationField title="題目 Title" tags={["required", "public"]}>
               請不要超出<span className="hightlight subTitle"> 20 </span>字。
             </InformationField>
@@ -191,7 +191,7 @@ export default function Page() {
             除了暱稱 /
             名字、自我介紹被用於宣傳，其餘資訊僅需提供一人作為代表（當稿件同時有多位講者時），供議程組於聯絡時使用。
           </p>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-4">
             <InformationField title="電子郵件" tags={["required"]}>
               能讓大會聯絡的電子信箱。（注意：請您在大會的聯絡過程中，維持使用相同信箱）
             </InformationField>

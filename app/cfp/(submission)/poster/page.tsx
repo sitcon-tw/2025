@@ -93,7 +93,7 @@ export default function Page() {
             稿件資訊
           </h3>
           <p>除標示為公開之資訊會對外公布外，其餘僅供審稿委員於審稿時閱讀。</p>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-4">
             <InformationField
               title="題目 Project Title"
               tags={["required", "public"]}
@@ -137,11 +137,11 @@ export default function Page() {
             個人資料
           </h3>
           <div>
-            <p className="leading-10 tracking-wider">
+            <p className="mb-2 leading-10 tracking-wider">
               除了暱稱 /
               名字、自我介紹被用於宣傳，其餘資訊僅需提供一人作為代表（當稿件同時有多位講者時），供議程組於聯絡時使用。
             </p>
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-4">
               <InformationField title="電子郵件" tags={["required"]}>
                 能讓大會聯絡的電子信箱。（注意：請您在大會的聯絡過程中，維持使用相同信箱）
               </InformationField>
