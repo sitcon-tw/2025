@@ -51,7 +51,7 @@ export default function Navbar() {
                   <motion.p
                     initial={{ y: 0, scale: 1 }}
                     whileHover={{ y: -2, scale: 1.2 }}
-                    className={`hover:text-primary ${pathname === link && "text-primary"}`}
+                    className={`hover:text-primary ${pathname === link && "font-black text-primary"}`}
                   >
                     {label}
                   </motion.p>
