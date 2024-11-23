@@ -629,18 +629,27 @@ export function InformationField({
     public: "公開",
   };
 
-  const titleChinese = title.split(" ")[0];
-  const titleEnglish = title.split(" ")[1];
+  const titleChinese = title.split(" ")[0].split("\\n");
+  const titleEnglish = title.split(" ")[1] || "";
 
   return (
     <div className="relative flex flex-col gap-2 rounded-2xl bg-background-light p-4">
       <div className="items-left flex flex-col">
         <span className="w-[70%] text-3xl font-bold leading-9 text-secondary">
-          {titleChinese}
+          {titleChinese.length > 1
+            ? titleChinese.map((t) => (
+                <>
+                  {t}
+                  <br />
+                </>
+              ))
+            : titleChinese}
         </span>
-        <span className="text-lg font-medium leading-9 text-secondary">
-          {titleEnglish}
-        </span>
+        {title.split(" ").length > 1 && (
+          <span className="text-lg font-medium leading-9 text-secondary">
+            {titleEnglish}
+          </span>
+        )}
       </div>
       <div className="absolute right-3 top-5 gap-2">
         {tags.map((tag) => (
