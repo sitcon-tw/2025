@@ -170,8 +170,8 @@ export default function Page() {
               title="主題標籤 Labels"
               tags={["required", "public"]}
             >
-              請填寫 1~4 個該議程相關的領域與{" "}
-              <span className="hightlight subTitle">知識標籤</span>
+              請填寫 1~4 個該議程相關的{" "}
+              <span className="hightlight subTitle">領域與知識標籤</span>{" "}
               ，例如：ML、Data
               Science、資安紅隊、blockchain、社團等；錄取後會與講者溝通微調後公開於官網議程表。
             </InformationField>
