@@ -427,12 +427,12 @@ export default function Page() {
           </li>
           <li className="listItem">
             <span className="subTitle hightlight">表達能力：</span>
-            提供的資料是否有條理、文句暢通，以及提供資料之完整度。完整的資料能讓審稿委員更清楚了解演講細節。
+            提供的資料是否完整、有條理、文句暢通。完整的資料能讓審稿委員更清楚了解演講細節。
           </li>
           <li className="listItem">
             <span className="subTitle hightlight">適合聽眾：</span>稿件是否適合
             SITCON
-            大多數的與會者。經我們評估比較熱門的議程，將安排在較大的演講廳。
+            大多數的與會者。經審稿委員評估比較熱門的議程，將安排在較大的演講廳。
           </li>
         </ul>
       </section>
