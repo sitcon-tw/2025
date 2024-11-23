@@ -291,13 +291,6 @@ export default function Page() {
           <h3 className="my-4 text-h3-mobile font-bold text-primary md:text-h3">
             PRESENTATION
           </h3>
-          <p className="leading-10">
-            Presentation 包含完整
-            <span className="hightlight"> 30 </span>分鐘的議程與
-            <span className="hightlight"> 10 </span>
-            分鐘的問答時間，共 <span className="hightlight"> 40 </span>
-            分鐘，讓您有充分的時間展示想法、描述經歷、和與會者交流。
-          </p>
           <div className="my-4 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4">
             {presentations.map((item) => (
               <PresentationBlock
@@ -312,10 +305,6 @@ export default function Page() {
           <h3 className="my-4 text-h3-mobile font-bold text-primary md:text-h3">
             ESPRESSO
           </h3>
-          <p className="leading-10">
-            Espresso 僅有 <span className="hightlight"> 10 </span>
-            分鐘，挑戰最為濃縮與精華的議程，為與會者帶來短而精緻的知識洗禮。
-          </p>
           <div className="my-4 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4">
             {espressos.map((item) => (
               <PresentationBlock
@@ -397,11 +386,11 @@ export default function Page() {
           <InformationField title="電子郵件 Email" tags={["required"]}>
             能讓大會聯絡的電子信箱。（注意：請您在大會的聯絡過程中，維持使用相同信箱）
           </InformationField>
-          <InformationField
-            title="暱稱 / 名字 Name"
-            tags={["required", "public"]}
-          >
-            公開於講者海報及網站的稱呼。
+          <InformationField title="名字 Name" tags={["required", "public"]}>
+            您的姓名。
+          </InformationField>
+          <InformationField title="暱稱 Nick" tags={["required", "public"]}>
+            公開於講者及網站的稱呼。
           </InformationField>
           <InformationField
             title="自我介紹 Self Introduction"
