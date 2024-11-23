@@ -125,7 +125,7 @@ export default function Page() {
           <h3 className="text-h3-mobile font-bold text-primary md:text-h3">
             稿件資訊
           </h3>
-          <div className="grid grid-cols-2 gap-3 max-[1024px]:grid-cols-1">
+          <div className="flex flex-col gap-8">
             <InformationField title="題目 Title" tags={["required", "public"]}>
               請不要超出<span className="hightlight subTitle"> 20 </span>字。
             </InformationField>
@@ -136,22 +136,12 @@ export default function Page() {
               建議<span className="hightlight subTitle"> 150~250 </span>
               字，使用於宣傳與網站公告。
             </InformationField>
-            <div className="max-[820px]:hidden">
-              <InformationField
-                title="為何選擇\n開放式議程 Format Preference Explanation"
-                tags={["required"]}
-              >
-                請簡述為什麼您認為開放式議程更適合此議程的內容或主題呈現。這部分可以包括您希望透過開放式議程達成的效果、氣氛或參與方式，以便審稿委員理解您的設計考量。
-              </InformationField>
-            </div>
-            <div className="hidden max-[820px]:block">
-              <InformationField
-                title="為何選擇開放式議程 Format Preference Explanation"
-                tags={["required"]}
-              >
-                請簡述為什麼您認為開放式議程更適合此議程的內容或主題呈現。這部分可以包括您希望透過開放式議程達成的效果、氣氛或參與方式，以便審稿委員理解您的設計考量。
-              </InformationField>
-            </div>
+            <InformationField
+              title="為何選擇開放式議程 Format Preference Explanation"
+              tags={["required"]}
+            >
+              請簡述為什麼您認為開放式議程更適合此議程的內容或主題呈現。這部分可以包括您希望透過開放式議程達成的效果、氣氛或參與方式，以便審稿委員理解您的設計考量。
+            </InformationField>
             <InformationField
               title="進行模式 Method"
               tags={["required", "public"]}

@@ -617,32 +617,17 @@ export function InformationField({
     optional: "選填",
     public: "公開",
   };
-
-  const titleChinese = title.split(" ")[0].split("\\n");
-  const titleEnglish = title.split(" ")[1] || "";
-
   return (
-    <div className="relative flex flex-col gap-2 rounded-2xl bg-background-light p-4">
-      <div className="items-left flex flex-col">
-        <span className="w-[70%] text-3xl font-bold leading-9 text-secondary">
-          {titleChinese.length > 1
-            ? titleChinese.map((t) => (
-                <>
-                  {t}
-                  <br />
-                </>
-              ))
-            : titleChinese}
+    <div className="flex flex-col gap-2">
+      <div className="flex items-center gap-2">
+        <span className="text-lg font-bold leading-9 text-secondary">
+          {title}
         </span>
-        {title.split(" ").length > 1 && (
-          <span className="text-lg font-medium leading-9 text-secondary">
-            {titleEnglish}
-          </span>
-        )}
-      </div>
-      <div className="absolute right-3 top-5 gap-2">
         {tags.map((tag) => (
-          <span key={tag} className={`ml-2 rounded-lg px-3 py-1 ${tag || ""}`}>
+          <span
+            key={tag}
+            className={`rounded-lg bg-background-light px-3 ${tag || ""}`}
+          >
             {tagClassMap[tag]}
           </span>
         ))}
