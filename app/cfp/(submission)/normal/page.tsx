@@ -175,10 +175,10 @@ export default function Page() {
           歡迎寄信至{" "}
           <Link
             target="_blank"
-            href="mailto:contact@sitcon.org"
+            href="mailto:session@sitcon.org"
             className="cursor-pointer text-primary underline"
           >
-            contact@sitcon.org
+            session@sitcon.org
           </Link>{" "}
           詢問，我們會儘速回應。
         </p>
@@ -481,10 +481,10 @@ export default function Page() {
             若有任何問題或投稿建議，請來信 SITCON 議程組信箱{" "}
             <Link
               target="_blank"
-              href="mailto:contact@sitcon.org"
+              href="mailto:session@sitcon.org"
               className="cursor-pointer text-primary underline"
             >
-              <span className="hightlight subTitle">contact@sitcon.org</span>
+              <span className="hightlight subTitle">session@sitcon.org</span>
             </Link>{" "}
             。
           </p>
