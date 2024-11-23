@@ -206,7 +206,7 @@ export default function Page() {
         <p className="text-normal-mobile font-normal leading-10 tracking-wider md:text-normal">
           您可以從{" "}
           <Link
-            href="https://sitcon.org/2024"
+            href="https://sitcon.org/2024/poster/"
             target="_blank"
             className="cursor-pointer text-primary underline"
           >
