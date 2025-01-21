@@ -1,7 +1,11 @@
+"use client";
+
 import { ReactNode } from "react";
 import heroImage from "./_assets/hero.png";
 import Link from "next/link";
 import LinkButton from "../_components/linkButton";
+import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 
 export default function Page() {
   return (
@@ -14,6 +18,20 @@ export default function Page() {
         className="mx-auto mb-[-25%] aspect-[3/2] w-full max-w-[1920px] bg-top bg-no-repeat min-[1900px]:mb-[-20%] min-[2300px]:mb-[-15%]"
       >
         <div className="absolute left-0 right-0 top-1/2 px-10 md:left-10 md:right-auto md:w-2/3"></div>
+        <div className="absolute bottom-[70%] left-[50%] items-center justify-center sm:bottom-[45%] lg:bottom-[10%]">
+          <motion.div
+            initial={{ opacity: 0, y: -1 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1, delay: 0.5 },
+            }}
+            viewport={{ once: true }}
+            className="max-w-min animate-bounce"
+          >
+            <ChevronDown size={32} />
+          </motion.div>
+        </div>
       </div>
       <div className="flex justify-center">
         <div className="flex w-full max-w-[90%] flex-col justify-center px-4 py-40 lg:max-w-[840px] desktop:max-w-[1120px]">
