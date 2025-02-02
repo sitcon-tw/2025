@@ -90,6 +90,7 @@ function PastEvents() {
         { text: "2020", href: "https://sitcon.org/2020" },
         { text: "2021", href: "https://sitcon.org/2021" },
         { text: "2022", href: "https://sitcon.org/2022" },
+        { text: "2023", href: "https://sitcon.org/2023" },
         { text: "2024", href: "https://sitcon.org/2024" },
       ]}
     />
