@@ -230,7 +230,7 @@ export default function Page() {
         </div>
       </section>
       <div className="w-full gap-8 md:flex">
-        <div className="venue_desktop:bg-opacity-0 sticky top-[84px] z-10 max-h-[740px] w-full rounded-3xl bg-black bg-opacity-10 backdrop-blur-lg">
+        <div className="sticky top-[84px] z-10 max-h-[740px] w-full rounded-3xl bg-black bg-opacity-10 backdrop-blur-lg venue_desktop:bg-opacity-0">
           <Image
             src={options.find((option) => option.value === Floor)?.image ?? ""}
             alt={`${Floor} Floor Image`}
@@ -241,7 +241,7 @@ export default function Page() {
         </div>
 
         <div className="mt-8 w-full">
-          <div className="venue_desktop:grid-cols-2 grid grid-cols-1 gap-6 lg:gap-2">
+          <div className="grid grid-cols-1 gap-6 lg:gap-2 venue_desktop:grid-cols-2">
             {currentVenueData.map((venue) => (
               <div
                 key={venue.number}
