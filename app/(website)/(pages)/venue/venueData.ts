@@ -164,54 +164,47 @@ export default {
     },
     {
       number: "23",
-      title: "逢甲大學黑客社",
-      url: "https://www.facebook.com/share/15a4AQHPZK/?mibextid=wwXIfr",
-      description:
-        "黑客社成立的目的除了培養出專業的資安人才以外，也同時是為了推廣「黑客精神」，所謂的「黑客精神」是指致力於鑽研並且精進技術的同時也能互相討論以及分享知識。\n以下是我們的 linktree，歡迎來認識我們！\nhttps://linktr.ee/fcuhackersir",
-    },
-    {
-      number: "24",
       title: "Google Developer Groups On Campus",
       url: "https://gdg.tw/about/gdsc/",
       description:
         "Google Developer Groups on Campus (GDG on Campus) 是一個由Google支持的學生社群，旨在通過學生與專業開發人員聯繫，促進學生對 Google 開發人員技術的學習和應用，並為學生提供與技術專家互動和學習的機會。 GDG on Campus 在全球有超過 100 個國家/地區的 1000 多個社群。GDG on Campus 是學生們學習和分享技術的理想社群，並且能夠與技術行業的其他開發人員和專家建立聯繫.\n全台社群專頁索引：https://gdg.tw/chapters/",
     },
     {
-      number: "25",
+      number: "24",
       title: "HackIt",
       url: "https://scrapyard.hackit.tw/",
       description:
         "HackIt是一個學習型組織，強調不斷成長、反思與改進為核心價值。團隊由一群充滿熱情的青少生主導，鼓勵自主學習、互相合作，共同打造一個開放、積極的環境。我們鼓勵每位成員提出創意並共同實現，彼此協作，迎接挑戰，並推動不斷的自我突破。https://www.facebook.com/profile.php?id=61567019608090",
     },
     {
-      number: "26",
+      number: "25",
       title: "Taiwan Kotlin User Group",
       url: "http://taiwan-kotlin-user-group.github.io/",
       description:
         "Taiwan Kotlin User Group 是一個讓大家可以討論與交流 Kotlin 程式語言各種使用經驗，舉辦相關活動的社群。如果對 Kotlin 有興趣，想要多瞭解一些，歡迎來我們的社群一起聚會！\nhttps://www.facebook.com/kotlintwn",
     },
     {
-      number: "27",
+      number: "26",
       title: "網路遊民探險中：Taiwan Digital Rogue",
       url: "https://www.meetup.com/taiwan-digital-rogue/",
       description:
         "Taiwan Digital Rogue 是推廣數位遊牧生活的台灣社群，聚焦於遠端工作、生態圈交流與技能提升，打造自由且有連結的生活方式.",
     },
     {
-      number: "28",
+      number: "27",
       title: "台灣數位遊牧者協會",
       url: "https://dna.org.tw",
       description:
         "致力於推動台灣的數位遊牧生態，連結政府、民間企業與校園資源，讓台灣成為適合數位遊牧的地方，也讓大家更了解數位遊牧.",
     },
     {
-      number: "29",
+      number: "28",
       title: "海報展",
       description:
         "我們提供學生們一個展現自我的舞台，讓大家可以透過靜態海報展發表自己做的研究，同時也能和志同道合的同學當面交流想法，碰撞出知識的火花！歡迎投稿靜態海報展，一起加入這場學術派對！",
     },
     {
-      number: "30",
+      number: "29",
       title: "冰淇淋",
       description: "🍦冰冰冰冰冰🍦",
     },
