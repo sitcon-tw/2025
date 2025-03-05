@@ -11,7 +11,7 @@ export default function PosterPage() {
         {posterData.map((poster) => (
           <div
             key={poster.title}
-            className="transition-all duration-300 hover:scale-105 hover:rounded-xl hover:border hover:border-sky-300 hover:p-4"
+            className="cursor-pointer transition-all duration-300 hover:scale-105 hover:rounded-xl"
           >
             <Image
               src={`/poster/${poster.image}`}
