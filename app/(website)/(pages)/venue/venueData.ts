@@ -60,7 +60,7 @@ export default {
     {
       number: "8",
       title: "MozTW 社群 / 摩茲工寮",
-      url: "moztw.org",
+      url: "https://moztw.org/",
       description:
         "MozTW 是台灣 Mozilla 愛好者的實體社群，設有網站提供相關軟體下載等服務，並負責維護 Mozilla 大部分軟體的正體中文版本與語言套件的在地化。摩茲工寮是 MozTW 為開放社群與活動所設計，也由社群共同管理的空間.",
     },
