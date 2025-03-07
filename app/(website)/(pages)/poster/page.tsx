@@ -48,7 +48,7 @@ export default function PosterPage() {
           >
             <div className="group relative flex justify-center">
               <Image
-                src={`/poster/${poster.image}`}
+                src={`/2025/poster/${poster.image}`}
                 alt={poster.title}
                 width={400}
                 height={10}
