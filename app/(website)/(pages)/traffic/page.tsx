@@ -6,7 +6,8 @@ import Link from "next/link";
 
 type Transportation = "car" | "public" | "shuttle";
 export default function Page() {
-  const [transportation, setTransportation] = useState<Transportation>("shuttle");
+  const [transportation, setTransportation] =
+    useState<Transportation>("shuttle");
 
   const options: Array<{ value: Transportation; label: string }> = [
     { value: "shuttle", label: "大眾接駁車" },
@@ -54,10 +55,11 @@ export default function Page() {
               }}
               key={option.value}
               onClick={() => setTransportation(option.value)}
-              className={`flex h-[60px] flex-grow items-center justify-center rounded-xl text-black ${transportation === option.value
-                ? "bg-[#B9D3E6]"
-                : "bg-[#DEE6EB]"
-                }`}
+              className={`flex h-[60px] flex-grow items-center justify-center rounded-xl text-black ${
+                transportation === option.value
+                  ? "bg-[#B9D3E6]"
+                  : "bg-[#DEE6EB]"
+              }`}
             >
               {option.label}
             </motion.button>
