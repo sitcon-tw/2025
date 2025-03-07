@@ -5,7 +5,7 @@
 "2025@file:.":
   version "0.1.0"
   dependencies:
-    "2025" "file:../../../Library/Caches/Yarn/v6/npm-2025-0.1.0-ec7845d5-630f-4857-8d9e-04fa4027ce86-1741185500586/node_modules/2025"
+    "2025" "file:../../../Library/Caches/Yarn/v6/npm-2025-0.1.0-c295563f-7dce-4372-b390-e9fb2b2bec47-1741390958158/node_modules/2025"
     "@fortawesome/fontawesome-svg-core" "^6.7.1"
     "@fortawesome/free-brands-svg-icons" "^6.7.1"
     "@fortawesome/free-regular-svg-icons" "^6.7.1"
@@ -20,7 +20,9 @@
     react "^18"
     react-dom "^18"
     react-icons "^5.4.0"
-    react-markdown "^9.0.3"
+    react-markdown "^9.1.0"
+    rehype-external-links "^3.0.0"
+    remark-gfm "^4.0.1"
     tailwind-merge "^2.6.0"
     vaul "^1.1.2"
 
@@ -175,6 +177,11 @@
   integrity sha512-pKU0iqKRBlFB/ocOI1Ip2CkKePZpYpnw5bEItEkuZ/Nr9FQP1+p7VDWr4VfOdff4i9bFmrOaeaU1bFEyAcxiMQ==
   dependencies:
     glob "10.3.10"
+
+"@next/swc-darwin-arm64@14.2.15":
+  version "14.2.15"
+  resolved "https://registry.yarnpkg.com/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.2.15.tgz#6386d585f39a1c490c60b72b1f76612ba4434347"
+  integrity sha512-Rvh7KU9hOUBnZ9TJ28n2Oa7dD9cvDBKua9IKx7cfQQ0GoYUwg9ig31O2oMwH3wm+pE3IkAQ67ZobPfEgurPZIA==
 
 "@next/swc-darwin-x64@14.2.15":
   version "14.2.15"
@@ -578,29 +585,6 @@
   version "1.2.0"
   resolved "https://registry.npmjs.org/@ungap/structured-clone/-/structured-clone-1.2.0.tgz"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
-
-"2025@file:":
-  version "0.1.0"
-  resolved "file:"
-  dependencies:
-    "@fortawesome/fontawesome-svg-core" "^6.7.1"
-    "@fortawesome/free-brands-svg-icons" "^6.7.1"
-    "@fortawesome/free-regular-svg-icons" "^6.7.1"
-    "@fortawesome/free-solid-svg-icons" "^6.7.1"
-    "@fortawesome/react-fontawesome" "^0.2.2"
-    "@next/third-parties" "^15.0.3"
-    "2025" "file:"
-    clsx "^2.1.1"
-    framer-motion "^11.15.0"
-    lucide-react "^0.474.0"
-    next "14.2.15"
-    node "^23.5.0"
-    react "^18"
-    react-dom "^18"
-    react-icons "^5.4.0"
-    react-markdown "^9.0.3"
-    tailwind-merge "^2.6.0"
-    vaul "^1.1.2"
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
