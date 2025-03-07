@@ -169,6 +169,12 @@ export default {
       url: "https://www.micareproduction.tw/",
     },
     {
+      title: "路遊茶 Routea",
+      image: "routea.png",
+      description: "持續致力於推廣台灣本土茶飲，讓台灣茶香飄揚在更多的舞台上。",
+      url: "https://www.instagram.com/routea0601/",
+    },
+    {
       title: "個人贊助",
       image: "individual.png",
       description:
