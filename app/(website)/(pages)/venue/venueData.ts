@@ -30,6 +30,13 @@ export default {
         "在 LINE 上收到可疑的轉傳訊息，就先傳到 @cofacts 來看看網友怎麼說吧！這是個 2016 年持續至今的開源專案，蒐集 LINE 上的可疑訊息，並由網友擔任查核協作者，在 https://cofacts.tw 上面撰寫查核回應。查核成果以 CC BY-SA 釋出，讓研究者、智庫、媒體與有興趣的任何人取用。",
     },
     {
+      number: "4",
+      title: "SITCON",
+      url: "https://sitcon.org",
+      description:
+        "學生計算機年會（Students’ Information Technology Conference）自 2012 年發起，以學生為本、由學生自發舉辦，長期投身學生資訊教育與推廣開源精神，希望引領更多學子踏入資訊的殿堂，更冀望所有對資訊有興趣的學生，能夠在年會裏齊聚一堂，彼此激盪、傳承、啟發，達到「學以致用、教學相長」的實際展現。 ",
+    },
+    {
       number: "5",
       title: "Ruby Taiwan",
       url: "https://www.facebook.com/RubyJamTW",
@@ -53,7 +60,7 @@ export default {
     {
       number: "8",
       title: "MozTW 社群 / 摩茲工寮",
-      url: "moztw.org",
+      url: "https://moztw.org/",
       description:
         "MozTW 是台灣 Mozilla 愛好者的實體社群，設有網站提供相關軟體下載等服務，並負責維護 Mozilla 大部分軟體的正體中文版本與語言套件的在地化。摩茲工寮是 MozTW 為開放社群與活動所設計，也由社群共同管理的空間.",
     },
@@ -124,7 +131,7 @@ export default {
     {
       number: "18",
       title: "開放文化基金會",
-      url: "ocf.tw",
+      url: "https://ocf.tw",
       description:
         "開放文化基金會（Open Culture Foundation，簡稱 OCF）\n是一個非營利性的組織。透過推廣開放科技和跨界合作，在臺灣持續的銜繫科技社群與其他公／私領域，來促成開放共創保障數位人權、支持透明涵融的數位公民社會。\n\n自 2014 年創立以來，我們以法人做為組織形式，支持臺灣 40 多個開放科技社群，在過程中，不僅是持續性的推廣開放科技概念，我們也開始參與政策倡議，為眾人的數位人權發聲，進而創建了一個在臺灣發展開放科技的基地。這些成果並非由開放文化基金會獨立實現，而是透過科技社群和公民夥伴一起促使臺灣的數位/網路環境變得更加公開、透明和公眾參與 — 不論這樣的參與是以個人、社群或是組織為名義.",
     },
@@ -157,54 +164,47 @@ export default {
     },
     {
       number: "23",
-      title: "逢甲大學黑客社",
-      url: "https://www.facebook.com/share/15a4AQHPZK/?mibextid=wwXIfr",
-      description:
-        "黑客社成立的目的除了培養出專業的資安人才以外，也同時是為了推廣「黑客精神」，所謂的「黑客精神」是指致力於鑽研並且精進技術的同時也能互相討論以及分享知識。\n以下是我們的 linktree，歡迎來認識我們！\nhttps://linktr.ee/fcuhackersir",
-    },
-    {
-      number: "24",
       title: "Google Developer Groups On Campus",
       url: "https://gdg.tw/about/gdsc/",
       description:
         "Google Developer Groups on Campus (GDG on Campus) 是一個由Google支持的學生社群，旨在通過學生與專業開發人員聯繫，促進學生對 Google 開發人員技術的學習和應用，並為學生提供與技術專家互動和學習的機會。 GDG on Campus 在全球有超過 100 個國家/地區的 1000 多個社群。GDG on Campus 是學生們學習和分享技術的理想社群，並且能夠與技術行業的其他開發人員和專家建立聯繫.\n全台社群專頁索引：https://gdg.tw/chapters/",
     },
     {
-      number: "25",
+      number: "24",
       title: "HackIt",
       url: "https://scrapyard.hackit.tw/",
       description:
         "HackIt是一個學習型組織，強調不斷成長、反思與改進為核心價值。團隊由一群充滿熱情的青少生主導，鼓勵自主學習、互相合作，共同打造一個開放、積極的環境。我們鼓勵每位成員提出創意並共同實現，彼此協作，迎接挑戰，並推動不斷的自我突破。https://www.facebook.com/profile.php?id=61567019608090",
     },
     {
-      number: "26",
+      number: "25",
       title: "Taiwan Kotlin User Group",
       url: "http://taiwan-kotlin-user-group.github.io/",
       description:
         "Taiwan Kotlin User Group 是一個讓大家可以討論與交流 Kotlin 程式語言各種使用經驗，舉辦相關活動的社群。如果對 Kotlin 有興趣，想要多瞭解一些，歡迎來我們的社群一起聚會！\nhttps://www.facebook.com/kotlintwn",
     },
     {
-      number: "27",
+      number: "26",
       title: "網路遊民探險中：Taiwan Digital Rogue",
       url: "https://www.meetup.com/taiwan-digital-rogue/",
       description:
         "Taiwan Digital Rogue 是推廣數位遊牧生活的台灣社群，聚焦於遠端工作、生態圈交流與技能提升，打造自由且有連結的生活方式.",
     },
     {
-      number: "28",
+      number: "27",
       title: "台灣數位遊牧者協會",
       url: "https://dna.org.tw",
       description:
         "致力於推動台灣的數位遊牧生態，連結政府、民間企業與校園資源，讓台灣成為適合數位遊牧的地方，也讓大家更了解數位遊牧.",
     },
     {
-      number: "29",
+      number: "28",
       title: "海報展",
       description:
         "我們提供學生們一個展現自我的舞台，讓大家可以透過靜態海報展發表自己做的研究，同時也能和志同道合的同學當面交流想法，碰撞出知識的火花！歡迎投稿靜態海報展，一起加入這場學術派對！",
     },
     {
-      number: "30",
+      number: "29",
       title: "冰淇淋",
       description: "🍦冰冰冰冰冰🍦",
     },

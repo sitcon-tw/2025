@@ -158,7 +158,8 @@ export default {
     {
       title: "問路傳媒 DL MEDIA",
       image: "dl-media.png",
-      description: "市場上唯一可以規模合作財經科技商案的媒體品牌",
+      description:
+        "市場上唯一可以規模合作財經科技商案的媒體品牌\n\n代表國際論壇雙語主持人路怡珍 Catherine Lu",
       url: "https://portaly.cc/catelu",
     },
     {
@@ -166,6 +167,12 @@ export default {
       image: "micare.png",
       description: "",
       url: "https://www.micareproduction.tw/",
+    },
+    {
+      title: "路遊茶 Routea",
+      image: "routea.png",
+      description: "持續致力於推廣台灣本土茶飲，讓台灣茶香飄揚在更多的舞台上。",
+      url: "https://www.instagram.com/routea0601/",
     },
     {
       title: "個人贊助",

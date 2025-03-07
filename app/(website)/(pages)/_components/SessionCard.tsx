@@ -198,10 +198,7 @@ const CardWrapper = ({
 
   const linkAbleType = ["E", "P", "U", "PD", "S", "K", "L"];
   const isLinkable =
-    linkAbleType.includes(session.type) &&
-    session.zh.title !== "TBA" &&
-    session.speakers.length > 0 &&
-    session.zh.description !== "TBA";
+    linkAbleType.includes(session.type) && session.zh.description.length > 0;
 
   return (
     <div

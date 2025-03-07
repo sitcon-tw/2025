@@ -26,6 +26,7 @@ const config: Config = {
         desktop: "1920px",
         tablet: "1024px",
         mobile: "375px",
+        venue_desktop: "1350px",
       },
       fontSize: {
         h1: "48px",
