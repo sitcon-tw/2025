@@ -178,7 +178,7 @@ export default {
       title: "個人贊助",
       image: "individual.png",
       description:
-        "感謝個人贊助者，因為有你們的支持，SITCON 得以持續推動資訊教育與開源精神：\n\n　\n\n林＊祥、王＊雲、張＊沛、鄭＊霖、呂＊儒、林＊淵、吳＊漢、詹＊耀、AStar、鄭＊仁、張＊懷",
+        "感謝個人贊助者，因為有你們的支持，SITCON 得以持續推動資訊教育與開源精神：\n\n　\n\n林＊祥、王＊雲、張＊沛、鄭＊霖、呂＊儒、林＊淵、吳＊漢、詹＊耀、AStar、鄭＊仁、張＊懷、謝＊宇、胡＊恩、傅＊雅",
       url: "https://sitcon.org/donate",
     },
   ],
