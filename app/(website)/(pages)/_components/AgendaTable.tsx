@@ -60,7 +60,7 @@ export default function DesktopAgenda() {
         }}
       >
         {/* row1 empty R2 R0 R1 R3 S  */}
-        <div className="sticky top-[120px] z-20 border-b border-b-white border-opacity-30 bg-background py-2 text-center text-[24px] font-bold"></div>
+        <div className="sticky top-[70px] z-20 border-b border-b-white border-opacity-30 bg-background py-2 text-center text-[24px] font-bold"></div>
         {rooms.map((room, index) => (
           <div
             key={index}
@@ -68,7 +68,7 @@ export default function DesktopAgenda() {
               gridColumn: room.id + " / " + getNextRoom(room.id),
               gridRow: "start / divider",
             }}
-            className="sticky top-[120px] z-20 border-b border-b-white border-opacity-30 bg-background py-2 text-center text-[24px] font-bold"
+            className="sticky top-[70px] z-20 border-b border-b-white border-opacity-30 bg-background py-2 text-center text-[24px] font-bold"
           >
             {room.id}
           </div>
