@@ -42,7 +42,7 @@ export default function PosterPage() {
           >
             <div className="group relative flex justify-center">
               <Image
-                src={`/poster/${poster.image}`}
+                src={`/2025/poster/${poster.image}`}
                 alt={poster.title}
                 width={400}
                 height={10}
@@ -98,10 +98,10 @@ export default function PosterPage() {
                   />
                 </svg>
               </button>
-              <div className="flex w-full flex-col overflow-y-auto md:overflow-visible md:flex-row">
-                <div className="relative mb-6 min-h-[60vh] aspect-[3/4] w-full overflow-hidden md:mb-0 md:min-h-0 md:aspect-[4/3] md:w-1/2">
+              <div className="flex w-full flex-col overflow-y-auto md:flex-row md:overflow-visible">
+                <div className="relative mb-6 aspect-[3/4] min-h-[60vh] w-full overflow-hidden md:mb-0 md:aspect-[4/3] md:min-h-0 md:w-1/2">
                   <Image
-                    src={`/poster/${selectedPoster.image}`}
+                    src={`/2025/poster/${selectedPoster.image}`}
                     alt={selectedPoster.title}
                     fill
                     className="rounded-lg object-contain"
