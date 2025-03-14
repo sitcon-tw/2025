@@ -42,11 +42,11 @@ export default function PosterPage() {
           >
             <div className="group relative flex justify-center">
               <Image
-                src={`/2025/poster/${poster.image}`}
+                src={`/poster/${poster.image}`}
                 alt={poster.title}
                 width={400}
                 height={10}
-                className="rounded-xl transition-all group-hover:opacity-80"
+                className="rounded-2xl transition-all group-hover:opacity-80"
               />
               <p
                 className={cn(
@@ -68,7 +68,7 @@ export default function PosterPage() {
         {selectedPoster && (
           <div className="fixed inset-0 z-50 flex items-center justify-center">
             <div
-              className="absolute inset-0 bg-black bg-opacity-50"
+              className="absolute inset-0 bg-black bg-opacity-70"
               onClick={handleCloseDialog}
             />
 
@@ -76,14 +76,51 @@ export default function PosterPage() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
-              className="relative z-10 max-h-[50vh] w-full max-w-lg overflow-x-hidden overflow-y-scroll whitespace-pre-wrap rounded-lg bg-background p-12"
+              className="relative z-10 mx-4 flex max-h-[90vh] w-full max-w-5xl flex-col overflow-hidden rounded-lg bg-background p-4 md:mx-8 md:flex-row md:p-8"
             >
-              <h2 className="mb-4 text-2xl font-bold">
-                {selectedPoster.title}
-              </h2>
-              <p className="mb-4 whitespace-pre-line">
-                {selectedPoster.description}
-              </p>
+              <button
+                onClick={handleCloseDialog}
+                aria-label="關閉"
+                className="absolute right-4 top-4 z-20 rounded-full bg-black/20 p-2 text-white transition-colors hover:bg-black/40"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <div className="flex w-full flex-col overflow-y-auto md:overflow-visible md:flex-row">
+                <div className="relative mb-6 min-h-[60vh] aspect-[3/4] w-full overflow-hidden md:mb-0 md:min-h-0 md:aspect-[4/3] md:w-1/2">
+                  <Image
+                    src={`/poster/${selectedPoster.image}`}
+                    alt={selectedPoster.title}
+                    fill
+                    className="rounded-lg object-contain"
+                    priority
+                  />
+                </div>
+                <div className="flex w-full flex-col md:w-1/2 md:pl-8">
+                  <h2 className="mb-4 text-2xl font-bold">
+                    {selectedPoster.title}
+                  </h2>
+                  <div className="md:max-h-[60vh] md:overflow-y-auto [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-white/20 [&::-webkit-scrollbar-thumb]:hover:bg-white/30 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-black/10 [&::-webkit-scrollbar]:w-2">
+                    <div className="pr-8">
+                      <p className="whitespace-pre-line">
+                        {selectedPoster.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
         )}
