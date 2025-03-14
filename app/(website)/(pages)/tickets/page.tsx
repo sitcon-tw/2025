@@ -59,7 +59,7 @@ export default function Page() {
             <LinkButton
               link={"https://sitcon.kktix.cc/events/sitcon2025"}
               target="_blank"
-              text="立即取得"
+              text="售票截止"
               className="ml-[-4px] md:mr-4 md:w-full"
             />
           </div>
