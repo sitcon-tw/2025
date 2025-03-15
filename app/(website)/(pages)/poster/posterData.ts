@@ -36,15 +36,10 @@ The prediction of molecular properties was improved by a comprehensive research 
     image: "3.jpg",
   },
   {
-    title:
-      "Enhanced Real-World Video Question-Answering :A Selective-Based Approach",
-    author: "恩恩",
-    authorDescription: `As a mathematics student with a strong passion for artificial intelligence, I enjoy leveraging my mathematical knowledge to solve real‐world computer vision tasks through AI integration. For example, I have recently developed a real‐time automatic system for tracking and analyzing basketball matches using computer vision, deep learning models, and various mathematical techniques. As hobbies, I have served as the team leader in three AI Cup competitions, each with commendable results.`,
-    description: `In this poster, we address video question-answering (VQA) challenges within the STAR dataset [1]. We present a modified version of the Flipped VQA 7B model [2], enhancing it by implementing a trainable frame selector and utilizing Llama-adapter [3] for fine-tuning. Also, we conduct an in-depth analysis of failed predictions and fine-tune hyper-parameters for improved accuracy.
-  
-  - [1] Bo Wu, et el. STAR: A Benchmark for Situated Reasoning in Real-World Videos. In NeurIPS 2021.
-  - [2] Dohwan Ko, et el. Large Language Models are Temporal and Causal Reasoners for Video Question Answering. In EMNLP 2023.
-  - [3] R Zhang, et al. LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention. arXiv:2303.16199, 2023.`,
+    title: "Hinagiku: AI-Powered Collaborative Learning",
+    author: "Hinagiku Dev",
+    authorDescription: `Wu, Tai-Cheng is a student in The affiliated senior high school of National Taiwan Normal University. TC is specialized in computer science and have publish some research related to this in science fair. Moreover, TC is the 30th club leader of Campus Network Management Club. `,
+    description: `Hinagiku is an open-sourced intelligent system designed to support discussions in educational environments. We enhanced the traditional think-pair-share learning methodology with novel technologies like ASR and LLM to parallelize the discussions and improve the transparency of discussion groups from the host's side. book: https://hackmd.io/@hinagiku/wiki/%2Fsbkix5B9RFaVM3OzQsN3EQ`,
     image: "5.jpg",
   },
   {

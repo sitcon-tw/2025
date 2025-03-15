@@ -5,6 +5,9 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import posterData from "./posterData";
 import { cn } from "@/lib/utils";
+import rehypeExternalLinks from "rehype-external-links";
+import remarkGfm from "remark-gfm";
+import ReactMarkdown from "react-markdown";
 
 interface Poster {
   title: string;
@@ -115,7 +118,33 @@ export default function PosterPage() {
                   <div className="md:max-h-[60vh] md:overflow-y-auto [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-white/20 [&::-webkit-scrollbar-thumb]:hover:bg-white/30 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-black/10 [&::-webkit-scrollbar]:w-2">
                     <div className="pr-8">
                       <p className="whitespace-pre-line">
-                        {selectedPoster.description}
+                        <ReactMarkdown
+                          remarkPlugins={[remarkGfm]}
+                          rehypePlugins={[
+                            [
+                              rehypeExternalLinks,
+                              {
+                                target: "_blank",
+                                rel: ["noopener", "noreferrer"],
+                              },
+                            ],
+                          ]}
+                          components={{
+                            a: ({ ...props }) => (
+                              <a
+                                {...props}
+                                style={{
+                                  color: "rgb(119 187 255)",
+                                  textDecoration: "underline",
+                                }}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              />
+                            ),
+                          }}
+                        >
+                          {selectedPoster.description}
+                        </ReactMarkdown>
                       </p>
                     </div>
                   </div>
