@@ -39,7 +39,7 @@ The prediction of molecular properties was improved by a comprehensive research 
     title: "Hinagiku: AI-Powered Collaborative Learning",
     author: "Hinagiku Dev",
     authorDescription: `Wu, Tai-Cheng is a student in The affiliated senior high school of National Taiwan Normal University. TC is specialized in computer science and have publish some research related to this in science fair. Moreover, TC is the 30th club leader of Campus Network Management Club. `,
-    description: `Hinagiku is an open-sourced intelligent system designed to support discussions in educational environments. We enhanced the traditional think-pair-share learning methodology with novel technologies like ASR and LLM to parallelize the discussions and improve the transparency of discussion groups from the host's side. book: https://hackmd.io/@hinagiku/wiki/%2Fsbkix5B9RFaVM3OzQsN3EQ`,
+    description: `Hinagiku is an open-sourced intelligent system designed to support discussions in educational environments. We enhanced the traditional think-pair-share learning methodology with novel technologies like ASR and LLM to parallelize the discussions and improve the transparency of discussion groups from the host's side. book: https://hackmd.io/@hinagiku/wiki`,
     image: "5.jpg",
   },
   {
