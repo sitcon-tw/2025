@@ -45,12 +45,44 @@ export default function Navbar({
   return (
     <nav className="fixed left-0 right-0 top-0 z-30 flex justify-center">
       <motion.div
-        className="flex w-full items-center justify-center transition"
+        className="flex w-full flex-col items-center justify-center transition"
         style={{
           opacity: allowFadeEffect ? navBackgroundOpacity : 1,
           backgroundColor: allowFadeEffect ? navBackground : "rgba(39, 48, 77)",
         }}
       >
+        <motion.div
+          className="flex w-full items-center justify-center gap-4 overflow-hidden p-1 text-center font-bold text-white"
+          style={{
+            // Grid overlay (topmost)
+            backgroundImage:
+              // Contrast overlay to improve legibility
+              `linear-gradient(0deg, rgba(0,0,0,0.22), rgba(0,0,0,0.22)),` +
+              `repeating-linear-gradient(0deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 48px),` +
+              `repeating-linear-gradient(90deg, rgba(255,255,255,0.06) 0 1px, transparent 1px 48px),` +
+              // Soft vignette/darkness at top to mimic image depth
+              `linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.08) 60%, rgba(0,0,0,0) 100%),` +
+              // Four radial color fields with gentler falloff and less stretch
+              `radial-gradient(60% 60% at 18% 75%, rgba(69,130,215,0.9) 0%, rgba(69,130,215,0.5) 20%, rgba(69,130,215,0.0) 60%),` +
+              `radial-gradient(55% 55% at 52% 82%, rgba(196,93,63,0.9) 0%, rgba(196,93,63,0.5) 22%, rgba(196,93,63,0.0) 60%),` +
+              `radial-gradient(70% 70% at 38% 58%, rgba(221,141,62,0.95) 0%, rgba(221,141,62,0.5) 25%, rgba(221,141,62,0.0) 68%),` +
+              `radial-gradient(50% 50% at 78% 58%, rgba(236,135,184,0.9) 0%, rgba(236,135,184,0.45) 20%, rgba(236,135,184,0.0) 58%)`,
+            backgroundBlendMode:
+              "multiply, normal, normal, multiply, screen, screen, screen, screen",
+          }}
+          animate={{ height: 50, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 2 }}
+          initial={{ height: 0, opacity: 0 }}
+        >
+          SITCON 2026 熱烈徵稿中！
+          <Link
+            target="_blank"
+            href="https://sitcon.org/2026/cfp/"
+            className="rounded-lg bg-white px-3 py-1 text-black opacity-80 transition-opacity hover:opacity-60 active:scale-95"
+          >
+            查看投稿資訊
+          </Link>
+        </motion.div>
         <div className="w-full max-w-[950px] desktop:max-w-[1230px]">
           <ul className="relative flex w-full items-center justify-between p-4 [@media(max-width:900px)]:justify-center">
             <Link href={logoHref}>
