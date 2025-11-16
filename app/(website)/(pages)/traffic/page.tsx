@@ -10,7 +10,7 @@ export default function Page() {
     useState<Transportation>("shuttle");
 
   const options: Array<{ value: Transportation; label: string }> = [
-    { value: "shuttle", label: "大眾接駁車" },
+    { value: "shuttle", label: "大會接駁車" },
     { value: "public", label: "大眾運輸工具" },
     { value: "car", label: "自行開車 / 機車" },
   ];
